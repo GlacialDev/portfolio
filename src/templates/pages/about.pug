@@ -1,0 +1,15 @@
+extends ../template
+
+block variables
+  - var title = 'Обо мне'
+
+block content
+  h1 Обо мне
+  p картинки через gulp images
+  ul.images
+    li
+      img(src="assets/images/img-1.jpg", alt="")
+    li
+      img(src="assets/images/img-2.jpg", alt="")
+    li
+      img(src="assets/images/img-3.jpg", alt="")
