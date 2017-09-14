@@ -103,7 +103,7 @@ exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
-exports.compressImage = compressImage;
+// exports.compressImage = compressImage;
 
 //develop
 gulp.task('default', gulp.series (
