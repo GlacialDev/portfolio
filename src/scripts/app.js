@@ -1,3 +1,3 @@
-const btn = require('./common/btn');
+const dontGoPlease = require('./common/btn');
 
-btn();
+dontGoPlease();

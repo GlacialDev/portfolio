@@ -1,7 +1,8 @@
-function dontGoPlease() {
-  var elem = document.getElementsByClassName('button');
-
-  elem.onclick = event.preventDefault();
+function dontGoPlease(event) {
+  var el = document.getElementsByClassName('button');
+  console.log(el);
+  console.log(el[0]);
+  el.addEventListener("click", el.preventDefault(), false)
 }
 
 module.exports = dontGoPlease;
