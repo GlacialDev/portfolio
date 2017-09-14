@@ -17,24 +17,24 @@ const webpackConfig = require('./webpack.config.js');
 const imagemin = require('gulp-imagemin');
 
 const paths = {
-  root: './build',
+  root: './docs',
   templates: {
     pages: 'src/templates/pages/*.pug',
     src: 'src/templates/**/*.pug',
-    dest: 'build/assets/'
+    dest: 'docs/assets/'
   },
   styles: {
     src: 'src/styles/**/*scss',
-    dest: 'build/assets/styles/'
+    dest: 'docs/assets/styles/'
   },
   images: {
     src: 'src/images/**/*.*',
-    dest: 'build/assets/images/',
-    compressed: 'build/assets/images/compressed'
+    dest: 'docs/assets/images/',
+    compressed: 'docs/assets/images/compressed'
   },
   scripts: {
     src: 'src/scripts/**/*.js',
-    dest: 'build/assets/scripts'
+    dest: 'docs/assets/scripts'
   }
 }
 
