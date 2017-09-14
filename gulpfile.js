@@ -13,9 +13,6 @@ const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
 
-//сжатие картинок
-// const imagemin = require('gulp-imagemin');
-
 const paths = {
   root: './docs',
   templates: {
@@ -89,33 +86,19 @@ function images() {
     .pipe(gulp.dest(paths.images.dest));
 }
 
-// //сжатие картинок
-// function compressImage() {
-//   return gulp.src(paths.images.src)
-//     .pipe(imagemin(
-//       [imagemin.jpegtran()]
-//       [imagemin.optipng({optimizationLevel: 1})],
-//     ))
-//     .pipe(gulp.dest(paths.images.compressed))
-// }
-
 exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
-// exports.compressImage = compressImage;
 
 //develop
 gulp.task('default', gulp.series (
   gulp.parallel(styles, templates, images, scripts),
-  // compressImage,
   gulp.parallel(watch, server)
 ));
-
 
 //production
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, templates, images, scripts),
-  // compressImage
+  gulp.parallel(styles, templates, images, scripts)
 ));
