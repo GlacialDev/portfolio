@@ -22,6 +22,7 @@ const paths = {
   },
   styles: {
     src: 'src/styles/**/*scss',
+    common: 'src/styles/common/',
     dest: 'docs/assets/styles/'
   },
   images: {
@@ -46,6 +47,9 @@ function templates() {
 function styles() {
   return gulp.src('./src/styles/app.scss')
     .pipe(sourcemaps.init())
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }))
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(sourcemaps.write())
     .pipe(rename({suffix: '.min'}))

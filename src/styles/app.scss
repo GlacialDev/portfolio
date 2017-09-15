@@ -1,16 +1,2 @@
-body{
-  margin: 10px;
-  background: #fff;
-}
-
-.button{
-  display: inline-block;
-  width: 100px;
-  height: 30px;
-  background: green;
-  border: 2px solid black;
-  text-align: center;
-}
-
-@import 'common/menu';
-@import 'common/images';
+@import 'normalize';
+@import 'pages/intro.scss';
