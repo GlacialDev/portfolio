@@ -33,6 +33,10 @@ const paths = {
   scripts: {
     src: 'src/scripts/**/*.js',
     dest: 'docs/assets/scripts'
+  },
+  fonts: {
+    src: 'src/fonts/**/*.*',
+    dest: 'docs/assets/fonts'
   }
 }
 
@@ -68,12 +72,25 @@ function scripts() {
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
+// перенос картинок 
+function images() {
+  return gulp.src(paths.images.src)
+    .pipe(gulp.dest(paths.images.dest));
+}
+
+// шрифты
+function fonts() {
+  return gulp.src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dest));
+}
+
 // следим за исходниками src
 function watch() {
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.templates.src, templates);
   gulp.watch(paths.images.src, images);
   gulp.watch(paths.scripts.src, scripts);
+  gulp.watch(paths.fonts.src, fonts);
 }
 
 // следим за папкой билд, обновляем страничку
@@ -84,12 +101,6 @@ function server() {
   browserSync.watch(paths.root, browserSync.reload);
 }
 
-// перенос картинок 
-function images() {
-  return gulp.src(paths.images.src)
-    .pipe(gulp.dest(paths.images.dest));
-}
-
 exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
@@ -97,12 +108,12 @@ exports.images = images;
 
 //develop
 gulp.task('default', gulp.series (
-  gulp.parallel(styles, templates, images, scripts),
+  gulp.parallel(styles, templates, images, scripts, fonts),
   gulp.parallel(watch, server)
 ));
 
 //production
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, templates, images, scripts)
+  gulp.parallel(styles, templates, images, scripts, fonts)
 ));
