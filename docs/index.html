@@ -9,15 +9,19 @@
   </head>
   <body>
     <div class="intro-wrap">
-      <div class="container">
+      <div class="intro-container">
         <div class="auth">
           <div class="auth__title">Авторизуйтесь</div>
           <div class="auth__form-block">
             <form class="auth__form">
-              <label class="auth__icon" for="auth-login"></label>
-              <input class="auth__input" type="text" placeholder="Логин" id="auth-login">
-              <label class="auth__icon" for="auth-pass"></label>
-              <input class="auth__input" type="password" placeholder="Пароль" id="auth-pass">
+              <label class="auth__input-label">
+                <div class="auth__icon"></div>
+                <input class="auth__input" type="text" placeholder="Логин">
+              </label>
+              <label class="auth__input-label">
+                <div class="auth__icon"></div>
+                <input class="auth__input" type="password" placeholder="Пароль">
+              </label>
               <label class="auth__check">
                 <input class="auth__checkbox" type="checkbox">
                 <div class="auth__checkbox-fake"></div>
@@ -39,8 +43,9 @@
             </form>
           </div>
         </div>
-        <div class="auth__buttons-row"><a class="auth__to-main-btn">На главную</a><a class="auth__login-btn">Войти</a></div>
+        <div class="auth__buttons-row"><a class="auth__to-main-btn">На главную</a><a class="auth__login-btn" href="/about.html">Войти</a></div>
       </div>
+      <footer class="intro-footer">© Владимир Астахов | создано с любовью в LoftSchool | 2016</footer>
     </div>
     <script src="./assets/scripts/bundle.js"></script>
   </body>

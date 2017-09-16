@@ -8,13 +8,49 @@
     <link rel="stylesheet" href="./assets/styles/app.min.css">
   </head>
   <body>
-    <h1>Обо мне</h1>
-    <p>картинки через gulp images</p>
-    <ul class="images">
-      <li><img src="assets/images/img-1.jpg" alt=""></li>
-      <li><img src="assets/images/img-2.jpg" alt=""></li>
-      <li><img src="assets/images/img-3.jpg" alt=""></li>
-    </ul>
+    <div class="wrapper">
+      <section class="header">
+        <div class="header__container">
+          <div class="header__nav">
+            <div class="header__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div><a class="header__menu">
+              <div class="header__hamburger-menu"></div></a>
+          </div>
+          <div class="header__who">
+            <div class="profile">
+              <div class="profile__image"></div>
+              <div class="profile__name">Владимир Астахов</div>
+              <div class="profile__desc">Личный сайт веб разработчика</div>
+            </div>
+          </div>
+          <div class="header__arrow">
+            <div class="arrow"><a class="arrow__link" href="">
+                <svg class="arrow__icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#portf_arrow_down"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__left-col"></div>
+        <div class="about__right-col"></div>
+      </section>
+      <section class="map"></section>
+    </div>
     <script src="./assets/scripts/bundle.js"></script>
   </body>
 </html>

@@ -6,8 +6,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 @import '../components/auth-intro.scss';
+
+.intro-footer {
+  height: 7%;
+  width: 100%;
+  text-align: center;
+  align-self: flex-end;
+  color: #fff;
+  font-family: 'roboto';
+  font-weight: 500;
+  font-style: normal;
+}

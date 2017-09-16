@@ -1,0 +1,26 @@
+.socials {
+  display: inline-block
+}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-top: rem(30px);
+  margin-left: rem(20px);
+}
+
+.socials__link {
+	display: inline-block;
+	&:hover .socials__icon {
+    fill: #6c9c5a;
+	}
+}
+
+.socials__icon {
+  fill: #fff;
+  width: rem(35px);
+  height: rem(25px);
+  transition: 0.5s;
+}

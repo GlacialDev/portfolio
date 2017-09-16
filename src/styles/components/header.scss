@@ -1,0 +1,87 @@
+.header {
+  height: rem(620px);
+  width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/intro/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+@import 'socials-list.scss';
+
+.header__menu {
+  margin-top: rem(30px);
+  margin-right: rem(30px);
+  display: inline-block;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.header__hamburger-menu {
+	border: rem(2px) solid #fff;
+	border-radius: rem(3px);
+	width: rem(25px);
+	position: relative;
+	background-color: currentColor;
+}
+.header__hamburger-menu:before {
+	content: '';
+	position: absolute;
+	border: rem(2px) solid #fff;
+	border-radius: rem(3px);
+	width: rem(25px);
+	top: rem(-10px);
+	margin: rem(-2px);
+	background-color: currentColor;
+}
+.header__hamburger-menu:after {
+	content: '';
+	position: absolute;
+	border: rem(2px) solid #fff;
+	border-radius: rem(3px);
+	width: rem(25px);
+	top: rem(10px);
+	margin: rem(-2px);
+	background-color: currentColor;
+}
+
+.header__who {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
+
+@import 'profile.scss';
+
+.arrow {
+	display: flex;
+	justify-content: center;
+}
+
+.arrow__link {
+	margin-bottom: rem(100px);
+	display: inline-block;
+	&:hover .arrow__icon {
+    opacity: 1;
+	}
+}
+
+.arrow__icon {
+	fill: #fff;
+  width: rem(30px);
+	height: rem(20px);
+	opacity: 0.7;
+	transition: 0.5s;
+}

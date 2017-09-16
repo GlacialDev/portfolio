@@ -5,15 +5,17 @@ block variables
 
 block content
   .intro-wrap
-    .container
+    .intro-container
       .auth
         .auth__title Авторизуйтесь
         .auth__form-block
           form.auth__form
-            label(for="auth-login").auth__icon
-            input(type="text" placeholder="Логин" id="auth-login").auth__input
-            label(for="auth-pass").auth__icon
-            input(type="password" placeholder="Пароль" id="auth-pass").auth__input
+            label.auth__input-label
+              .auth__icon
+              input(type="text" placeholder="Логин").auth__input
+            label.auth__input-label
+              .auth__icon
+              input(type="password" placeholder="Пароль").auth__input
             label.auth__check
               input(type="checkbox").auth__checkbox
               .auth__checkbox-fake
@@ -30,4 +32,5 @@ block content
                 .auth__radio-name Не уверен
       .auth__buttons-row
         a.auth__to-main-btn На главную
-        a.auth__login-btn Войти
+        a.auth__login-btn(href="/about.html") Войти
+    footer.intro-footer © Владимир Астахов | создано с любовью в LoftSchool | 2016

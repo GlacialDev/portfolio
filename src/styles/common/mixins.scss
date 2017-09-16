@@ -10,6 +10,22 @@
   @return $remSize * 1rem;
 }
 
+@mixin line {
+	position: relative;
+	margin-bottom: rem(30px);
+  &:after {
+    content: '';
+    position: absolute;
+    border: rem(1.5px) solid #fff;
+    border-radius: rem(3px);
+    width: rem(70px);
+    top: 100%;
+    left: 40%;
+    margin-top: rem(27px);
+    background-color: currentColor;
+  }
+}
+
 @mixin tablets {
 	@media screen and (max-width: $tablets) {
 		@content;
