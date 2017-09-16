@@ -2,13 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Добро пожаловать</title>
+    <title>Welcome</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
   </head>
   <body>
-    <div class="intro-wrap"></div>
+    <div class="intro-wrap">
+      <div class="container">
+        <div class="auth">
+          <div class="auth__title">Авторизуйтесь</div>
+          <div class="auth__form-block">
+            <form class="auth__form">
+              <label class="auth__icon" for="auth-login"></label>
+              <input class="auth__input" type="text" placeholder="Логин" id="auth-login">
+              <label class="auth__icon" for="auth-pass"></label>
+              <input class="auth__input" type="password" placeholder="Пароль" id="auth-pass">
+              <label class="auth__check">
+                <input class="auth__checkbox" type="checkbox">
+                <div class="auth__checkbox-fake"></div>
+                <div class="auth__checkbox-name">Я человек</div>
+              </label>
+              <div class="auth__question">Вы точно не робот?</div>
+              <div class="auth__radio-container">
+                <label class="auth__radio-label">
+                  <input class="auth__radio" type="radio" name="radio" id="radio">
+                  <div class="auth__radio-fake"></div>
+                  <div class="auth__radio-name">Да</div>
+                </label>
+                <label class="auth__radio-label">
+                  <input class="auth__radio" type="radio" name="radio" id="radio">
+                  <div class="auth__radio-fake"></div>
+                  <div class="auth__radio-name">Не уверен</div>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="auth__buttons-row"><a class="auth__to-main-btn">На главную</a><a class="auth__login-btn">Войти</a></div>
+      </div>
+    </div>
     <script src="./assets/scripts/bundle.js"></script>
   </body>
 </html>

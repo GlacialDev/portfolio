@@ -5,4 +5,9 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+@import '../components/auth-intro.scss';

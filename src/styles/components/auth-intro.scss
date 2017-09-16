@@ -1,0 +1,213 @@
+.auth {
+  position: relative;
+  display: block;
+  width: rem(380px);
+  height: rem(385px);
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    border-radius: rem(5px) rem(5px) rem(0px) rem(0px);
+    background-color: rgb( 18, 38, 32 );
+    opacity: 0.6;
+  }
+}
+
+.auth__title {
+  padding-top: rem(35px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: rem(35px);
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    border: rem(1.5px) solid #fff;
+    border-radius: rem(3px);
+    width: rem(70px);
+    top: 100%;
+    left: 40%;
+    margin-top: rem(27px);
+    background-color: currentColor;
+  }
+}
+
+.auth__form-block {
+  position: relative;
+}
+
+.auth__form {
+  margin-top: rem(40px);
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.auth__icon {
+  background-color: #f0efe9;
+  margin-top: rem(20px);
+  width: rem(45px);
+  height: rem(45px);
+  border-radius: rem(45px) rem(0px) rem(0px) rem(45px);
+}
+
+.auth__input {
+  margin-top: rem(20px);
+  padding: rem(10px);
+  padding-left: rem(20px);
+  background-color: #fff;
+  width: rem(265px);
+  border: 0px;
+  border-radius: rem(0px) rem(45px) rem(45px) rem(0px);
+  outline: none;
+}
+
+.auth__check {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.auth__checkbox {
+  margin-top: rem(20px);
+  display: none;
+
+  &-fake {
+    margin-top: rem(20px);
+    background: #fff;
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: rem(2px);
+    position: relative;
+  }
+
+  &-fake:after {
+    content: " ";
+    display: none;
+    position: absolute;
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: rem(2px);
+    top: 0; right: 0; left: 0; bottom: 0;
+    background-color: #6c9c5a;
+    background-image: url(../images/intro/checkmark.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &-name {
+    margin-top: rem(20px);
+    display: inline-block;
+    vertical-align: super;
+    padding-left: rem(10px);
+    color: #fff;
+  }
+}
+
+.auth__checkbox:checked + .auth__checkbox-fake:after {
+  display: inline-block;
+}
+
+.auth__question {
+  width: 100%;
+  text-align: center;
+  margin-top: rem(16px);
+  color: #fff;
+}
+
+.auth__radio-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.auth__radio-label:nth-last-child(1) {
+  margin-left: rem(16px);
+}
+
+.auth__radio {
+  margin-top: rem(16px);
+  display: none;
+
+  &-fake {
+    margin-top: rem(16px);
+    width: rem(18px);
+    height: rem(18px);
+    display: inline-block;
+    border: 1px solid rgb( 204, 204, 204 );
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+  }
+
+  &-fake:before {
+    content: "";
+    display: none;
+    width: rem(8px);
+    height: rem(8px);
+    background-color: #6c9c5a;
+    border-radius: 50%;
+    position: absolute;
+    top: rem(5px);
+    left: rem(5px);
+  }
+
+  &-name {
+    margin-top: rem(16px);
+    display: inline-block;
+    vertical-align: super;
+    padding-left: rem(10px);
+    color: #fff;
+  }
+}
+
+.auth__radio:checked + .auth__radio-fake:before {
+	display: inline-block;
+}
+
+.auth__radio:checked ~ .auth__radio-name {
+	color: #6c9c5a;
+}
+
+.auth__buttons-row {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.auth__to-main-btn, .auth__login-btn {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #6c9c5a;
+  height: rem(45px);
+  cursor: pointer
+
+}
+
+.auth__to-main-btn {
+  border-right: rem(1px) solid #9fb99e;
+  border-radius: rem(0px) rem(0px) rem(0px) rem(5px);
+
+  &:hover {
+    background-color: #498039;
+  }
+}
+
+.auth__login-btn {
+  border-left: rem(1px) solid #9fb99e;
+  border-radius: rem(0px) rem(0px) rem(5px) rem(0px);
+
+  &:hover {
+    background-color: #498039;
+  }
+}

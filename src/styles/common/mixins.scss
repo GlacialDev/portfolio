@@ -1,0 +1,17 @@
+@mixin circle($width, $color) {
+	width: $width;
+	height: $width;
+	border-radius: $width/2;
+	background-color: $color;
+}
+
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin tablets {
+	@media screen and (max-width: $tablets) {
+		@content;
+	}
+}

@@ -1,8 +1,33 @@
 extends ../template
 
 block variables
-  - var title = 'Добро пожаловать'
+  - var title = 'Welcome'
 
 block content
   .intro-wrap
-    
+    .container
+      .auth
+        .auth__title Авторизуйтесь
+        .auth__form-block
+          form.auth__form
+            label(for="auth-login").auth__icon
+            input(type="text" placeholder="Логин" id="auth-login").auth__input
+            label(for="auth-pass").auth__icon
+            input(type="password" placeholder="Пароль" id="auth-pass").auth__input
+            label.auth__check
+              input(type="checkbox").auth__checkbox
+              .auth__checkbox-fake
+              .auth__checkbox-name Я человек
+            .auth__question Вы точно не робот?
+            .auth__radio-container
+              label.auth__radio-label
+                input(type="radio" name="radio" id="radio").auth__radio
+                .auth__radio-fake
+                .auth__radio-name Да
+              label.auth__radio-label
+                input(type="radio" name="radio" id="radio").auth__radio
+                .auth__radio-fake
+                .auth__radio-name Не уверен
+      .auth__buttons-row
+        a.auth__to-main-btn На главную
+        a.auth__login-btn Войти
