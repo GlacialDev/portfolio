@@ -27,7 +27,7 @@
   text-transform: uppercase;
   color: #fff;
   font-size: rem(35px);
-  @include line;
+  @include line(27px);
 }
 
 .auth__form-block {
@@ -156,8 +156,8 @@
     background-color: #6c9c5a;
     border-radius: 50%;
     position: absolute;
-    top: rem(5px);
-    left: rem(5px);
+    top: rem(4px);
+    left: rem(4px);
   }
 
   &-name {
