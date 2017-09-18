@@ -6,7 +6,6 @@
   font-family: 'sansus';
   text-align: center;
   text-transform: uppercase;
-  position: relative;
   color: #373e42;
   font-size: rem(63px);
   line-height: rem(63px);
@@ -15,35 +14,19 @@
   @include line(20px);
 }
 
-.works__title-image {
-  z-index: -1;
-  position: absolute;
-  top: rem(-45px);
-  right: 0;
-  left: 33%;
+.works__title-svg {
+  top: -40%;
   bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.works__title-image {
   width: rem(400px);
   opacity: 0.2;
   fill: #93c42e;
-}
-
-.works__top-svg {
-  z-index: -2;
-  width: 100%;
-  height: rem(170px);
-  position: absolute;
-  top: rem(-170px);
-  bottom: 0;
-  right: 0;
-  left: 0;
-  &--left {
-    fill: #f8f9f5;
-    left: -25%;
-  }
-  &--right {
-    fill: #f8f9f5;
-    left: 25%;
-  }
 }
 
 .works__content {
@@ -75,11 +58,10 @@
 }
 
 .about-loft__title {
-  width: rem(320px);
+  max-width: rem(320px);
   font-family: 'sansus';
   text-align: center;
   text-transform: uppercase;
-  position: relative;
   color: #373e42;
   font-size: rem(35px);
   line-height: rem(35px);
@@ -135,8 +117,9 @@
 }
 
 .feedback__title {
+  z-index: 1;
   margin-top: rem(70px);
-  width: rem(350px);
+  max-width: rem(500px);
   font-family: 'sansus';
   text-align: center;
   text-transform: uppercase;
@@ -147,7 +130,30 @@
   @include line(20px);
 }
 
+.feedback__title-svg {
+  display: flex;
+  top: -15%;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.feedback__title-image {
+  width: rem(500px);
+  opacity: 0.2;
+  fill: #93c42e;
+}
+
+.feedback__list {
+  display: flex;
+  flex-direction: row;
+}
+
 .feedback__item {
+  z-index: 1;
+  position: relative;
   margin-top: rem(24px);
   margin-bottom: rem(70px);
   width: rem(400px);
@@ -158,9 +164,19 @@
 	justify-content: center;
 }
 
-.feedback__list {
+.feedback__item-svg {
   display: flex;
-  flex-direction: row;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.feedback__svg-image {
+  width: rem(80px);
+  opacity: 0.2;
+  fill: #93c42e;
 }
 
 .feedback__image {

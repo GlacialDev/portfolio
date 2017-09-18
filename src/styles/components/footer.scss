@@ -20,6 +20,32 @@
   padding: rem(20px);
 }
 
+.footer__top-middle {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 100%;
+    margin: auto;
+    border: rem(1px) solid #767b7d;
+    border-radius: rem(3px);
+    width: rem(1px);
+    margin-top: rem(20px);
+    margin-bottom: rem(20px);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0; right: 100%; bottom: 0; left: 0;
+    margin: auto;
+    border: rem(1px) solid #767b7d;
+    border-radius: rem(3px);
+    width: rem(1px);
+    margin-top: rem(20px);
+    margin-bottom: rem(20px);
+  }
+}
+
 .footer__nav-list {
   display: flex;
   justify-content: space-around;

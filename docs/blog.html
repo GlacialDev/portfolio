@@ -8,21 +8,123 @@
     <link rel="stylesheet" href="./assets/styles/app.min.css">
   </head>
   <body>
-    <h1>Блог</h1>
-    <ul>
-      <li>
-        <h2>Заголовок статьи</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, cum.</p>
-      </li>
-      <li>
-        <h2>Lorem, ipsum.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ullam?</p>
-      </li>
-      <li>
-        <h2>Lorem, ipsum dolor.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, aperiam?</p>
-      </li>
-    </ul>
+    <div class="wrapper blog">
+      <section class="header">
+        <div class="header__container">
+          <svg class="header__background-text">
+            <use xlink:href="assets/images/sprite/sprite.svg#blog_header"></use>
+          </svg>
+          <div class="header__nav">
+            <div class="header__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div><a class="header__menu">
+              <div class="header__hamburger-menu"></div></a>
+          </div>
+          <div class="header__who">
+            <div class="profile">
+              <div class="profile__image"></div>
+              <div class="profile__name">Владимир Астахов</div>
+              <div class="profile__desc">Личный сайт веб разработчика</div>
+            </div>
+          </div>
+          <div class="header__arrow">
+            <div class="arrow"><a class="arrow__link" href="">
+                <svg class="arrow__icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#portf_arrow_down"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="blog__content">
+        <div class="blog__top-frame">
+          <svg class="frame-svg frame-svg--left">
+            <use xlink:href="assets/images/sprite/sprite.svg#about_bg_left"></use>
+          </svg>
+          <svg class="frame-svg frame-svg--right">
+            <use xlink:href="assets/images/sprite/sprite.svg#about_bg_right"></use>
+          </svg>
+        </div>
+        <div class="articles">
+          <div class="articles__container">
+            <div class="articles__left-col">
+              <ul class="articles__title-list">
+                <li class="articles__title-item active">Lorem ipsum dolor sit amet.</li>
+                <li class="articles__title-item">Lorem ipsum </li>
+                <li class="articles__title-item">Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <div class="articles__right-col">
+              <ul class="articles__list">
+                <li class="articles__item"> 
+                  <div class="articles__title">Lorem ipsum dolor sit amet.</div>
+                  <div class="articles__date">22 ноября 2016</div>
+                  <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet architecto blanditiis saepe, tenetur veniam, cupiditate distinctio voluptatum assumenda debitis enim aliquam hic natus quisquam! Ullam veritatis est illo repellat fugit animi ut nemo minima reiciendis, libero ea, dolores officia architecto! Adipisci accusantium tempore molestias officiis eos itaque similique dolore temporibus.</div>
+                </li>
+                <li class="articles__item">
+                  <div class="articles__title">Lorem ipsum dolor sit amet.</div>
+                  <div class="articles__date">22 ноября 2016</div>
+                  <div class="articles__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque deleniti at eos maiores voluptates suscipit, pariatur autem debitis saepe incidunt, ducimus quibusdam reiciendis? Optio doloremque ullam repudiandae itaque odio. Illo ducimus officia quia possimus, quos commodi iusto quae quasi ipsa dicta exercitationem explicabo sed! Perspiciatis, ipsa quasi asperiores hic nulla veritatis tempore accusamus iure nobis ipsum vero amet accusantium reiciendis libero nisi sapiente laborum voluptatem eveniet expedita error commodi soluta repellendus. Eaque, et? Tenetur architecto voluptate excepturi? Laboriosam tenetur praesentium sint adipisci qui aut consequuntur voluptatibus nemo temporibus? Inventore in nostrum dolore aliquam iste adipisci sapiente consectetur, officiis non et ad debitis molestiae illo accusamus facere eius mollitia consequuntur vero delectus! Repudiandae consequuntur sed quam sint beatae, sequi aliquid. Ea, natus ipsa, repellat maiores accusamus tenetur animi eos corrupti dolor provident pariatur nisi assumenda optio quo architecto ipsum commodi neque dolore maxime ab ullam eius ad mollitia quidem! Delectus, molestias.</div>
+                </li>
+                <li class="articles__item">
+                  <div class="articles__title">Lorem ipsum dolor sit amet.</div>
+                  <div class="articles__date">22 ноября 2016</div>
+                  <div class="articles__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus autem exercitationem hic nobis, quia doloremque provident cumque molestiae, placeat unde, officiis sequi doloribus veniam. Dolor molestias rerum quos obcaecati qui, quisquam ratione blanditiis dignissimos explicabo corrupti odio iure, repellat, culpa ullam! Laudantium, eius harum dicta doloribus unde repellendus ipsa qui ducimus rerum incidunt excepturi maxime suscipit necessitatibus? Eius ipsa praesentium vero vitae pariatur optio beatae laudantium voluptas assumenda quidem, neque adipisci exercitationem quam voluptatum dolorum atque accusantium doloremque eaque quod amet voluptates deleniti! Veritatis libero exercitationem ex autem at similique rem accusamus quaerat magni est, iusto tenetur possimus fugit.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__top-row">
+          <div class="footer__top-left">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+          <div class="footer__top-middle">
+            <nav class="footer__nav-menu">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="./my-works.html">Мои работы</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="./about.html">Обо мне</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="./blog.html">Блог</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Авторизация</a></li>
+              </ul>
+            </nav>
+            <div class="footer__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__top-right">
+            <p>Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.</p>
+            <p> <span class="footer__quote">— Martin Golding</span></p>
+          </div>
+        </div>
+        <div class="footer__bottom-row">© Владимир Астахов | Создано с любовью в LoftSchool | 2016</div>
+      </footer>
+    </div>
     <script src="./assets/scripts/bundle.js"></script>
   </body>
 </html>

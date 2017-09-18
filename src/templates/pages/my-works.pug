@@ -2,6 +2,7 @@ extends ../template
 
 block variables
   - var title = 'Мои работы'
+  - var isBlog = false
 
 block content
   .wrapper.works
@@ -10,9 +11,9 @@ block content
       .works__title-svg
         svg.works__title-image
           use(xlink:href="assets/images/sprite/sprite.svg#works_header")
-      svg.works__top-svg.works__top-svg--left
+      svg.frame-svg.frame-svg--left.frame-svg--works
         use(xlink:href="assets/images/sprite/sprite.svg#about_bg_left")
-      svg.works__top-svg.works__top-svg--right
+      svg.frame-svg.frame-svg--right.frame-svg--works
         use(xlink:href="assets/images/sprite/sprite.svg#about_bg_right")
     .works__content
       .works__column.works__column--left
@@ -38,17 +39,26 @@ block content
     .works__feedback
       .feedback
         .feedback__title Что обо мне говорят
+          .feedback__title-svg
+            svg.feedback__title-image
+              use(xlink:href="assets/images/sprite/sprite.svg#about_header")
         ul.feedback__list
           li.feedback__item
-              .feedback__image.feedback__image--1
-              .feedback__desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-              .feedback__name Ковальчук Дмитрий
-              .feedback__who - основатель Loftschool
+            .feedback__item-svg
+              svg.feedback__svg-image
+                use(xlink:href="assets/images/sprite/sprite.svg#link")
+            .feedback__image.feedback__image--1
+            .feedback__desc Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+            .feedback__name Ковальчук Дмитрий
+            .feedback__who - основатель Loftschool
           li.feedback__item
-              .feedback__image.feedback__image--2
-              .feedback__desc Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-              .feedback__name Сабанцев Владимир
-              .feedback__who - преподаватель
+            .feedback__item-svg
+              svg.feedback__svg-image
+                use(xlink:href="assets/images/sprite/sprite.svg#link")
+            .feedback__image.feedback__image--2
+            .feedback__desc Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+            .feedback__name Сабанцев Владимир
+            .feedback__who - преподаватель
         .feedback__form-contaner
           .feedback__form-block
             form.feedback__form

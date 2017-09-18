@@ -1,0 +1,19 @@
+.frame-svg {
+  fill: #f8f9f5;
+  width: 100%;
+  height: rem(170px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  &--left {
+    left: -25%;
+  }
+  &--right {
+    left: 25%;
+  }
+  &--works {
+    z-index: -2;
+    top: rem(-170px);
+  }
+}
