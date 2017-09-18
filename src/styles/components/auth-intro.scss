@@ -27,7 +27,7 @@
   text-transform: uppercase;
   color: #fff;
   font-size: rem(35px);
-  @include line(27px);
+  @include line(24px);
 }
 
 .auth__form-block {
@@ -35,7 +35,7 @@
 }
 
 .auth__form {
-  margin-top: rem(40px);
+  margin-top: rem(12px);
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -47,12 +47,20 @@
   width: rem(45px);
   height: rem(45px);
   border-radius: rem(45px) rem(0px) rem(0px) rem(45px);
+  display: flex;
 }
 
 .auth__input-label {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.auth__image {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #c4cbcd;
+  margin: auto;
 }
 
 .auth__input {
@@ -97,7 +105,8 @@
     border-radius: rem(2px);
     top: 0; right: 0; left: 0; bottom: 0;
     background-color: #6c9c5a;
-    background-image: url(../images/intro/checkmark.png);
+    background-image: url(../images/svg/check.svg);
+    background-size: rem(12px) rem(12px);
     background-position: center center;
     background-repeat: no-repeat;
   }

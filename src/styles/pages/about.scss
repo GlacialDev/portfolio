@@ -1,4 +1,6 @@
 @import '../components/header.scss';
+@import '../components/circles.scss';
+@import '../components/footer.scss';
 
 .about {
   display: flex;
@@ -6,22 +8,25 @@
 }
 
 .about__column {
+  position: relative;
   text-align: center;
   width: 50%;
 
   &--left {
-    background-color: #ebefe2;
     display: flex;
-    flex-direction: row;
+    background-color: #ebefe2;
   }
 
   &--right {
     background-color: #f4f5f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .about__title {
-  align-self: end;
+  z-index: 1;
   width: 46%;
   font-family: 'sansus';
   text-align: center;
@@ -32,15 +37,173 @@
   @include line(16px);
 }
 
+.about__title-image {
+  z-index: -1;
+  position: absolute;
+  top: rem(-50px);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: rem(300px);
+  opacity: 0.2;
+  fill: #93c42e;
+}
+
 .about__profile {
   width: 54%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__image {
+  z-index: 1;
+  margin-top: rem(10px);
+  margin-bottom: rem(40px);
   width: 90%;
   min-height: rem(400px);
   max-width: rem(480px);
   background-image: url(../images/about/fashmark-men-trends-nature.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.about__subtitle, .contacts__subtitle {
+  width: 70%;
+  font-family: 'sansus';
+  text-align: center;
+  text-transform: uppercase;
+  color: #373e42;
+  font-size: rem(35px);
+  line-height: rem(35px);
+  @include line(16px);
+}
+
+.about__text {
+  margin-bottom: rem(50px);
+  width: 90%;
+  text-align: left;
+  font-family: 'roboto';
+  font-weight: 500;
+  color: #373e42;
+  font-size: rem(16px);
+
+  & > p {
+    margin-top: rem(30px);
+  }
+}
+
+.about__my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__skills-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about__small-title {
+  font-family: 'roboto';
+  font-weight: 700;
+  font-size: rem(28px);
+  color: #373e42;
+  margin-bottom: rem(20px);
+}
+
+.about__list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: rem(50px);
+}
+
+.about__item {
+  position: relative;
+  display: inline-block;
+  width: rem(170px);
+  height: rem(170px);
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url('../images/about/map.jpg');
+  background-size: cover;
+}
+
+.map__container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: rem(380px);
+  padding-bottom: rem(40px);
+  font-family: 'roboto';
+  font-weight: 500;
+  font-style: normal;
+  padding: rem(30px);
+  opacity: 0.85;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    border-radius: rem(5px);
+    background-color: rgb( 244, 245, 240 );
+    opacity: 0.85;
+  }
+}
+
+.contacts__list {
+  z-index: 1;
+  width: 100%;
+}
+
+.contacts__item {
+  margin-top: rem(24px);
+  display: flex;
+  align-items: center;
+}
+
+.contacts__image {
+  width: rem(28px);
+  height: rem(28px);
+  fill: #6c9c5a;
+}
+
+.contacts__text {
+  padding-left: rem(10px);
+  font-family: 'roboto';
+  font-weight: 700;
+}
+
+.about__top-img {
+  width: 100%;
+  height: rem(170px);
+  position: absolute;
+  top: rem(-170px);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  &--left {
+    fill: #ebefe2;
+  }
+  &--right {
+    fill: #f4f5f0
+  }
 }

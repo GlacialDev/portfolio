@@ -12,15 +12,14 @@
 
 @mixin line($px) {
 	position: relative;
-	margin-bottom: rem(30px);
   &:after {
     content: '';
-    position: absolute;
+    display: flex;
+    margin: auto;
     border: rem(1.5px) solid currentColor;
     border-radius: rem(3px);
     width: rem(70px);
     top: 100%;
-    left: 40%;
     margin-top: rem($px);
   }
 }

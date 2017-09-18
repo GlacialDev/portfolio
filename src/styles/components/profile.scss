@@ -12,7 +12,8 @@
 	width: rem(150px);
 	height: rem(150px);
 	border-radius: 50%;
-	background-image: url(../images/about/fashmark-men-trends-nature.jpg)
+	background-image: url(../images/about/fashmark-men-trends-nature.jpg);
+	background-size: contain;
 }
 
 .profile__name {

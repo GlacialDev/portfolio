@@ -1,5 +1,5 @@
 .header {
-  height: rem(620px);
+  height: 100vh;
   width: 100%;
 }
 
@@ -9,6 +9,7 @@
 }
 
 .header__container {
+	position: relative;
   height: 100%;
   width: 100%;
   background-image: url(../images/intro/background.jpg);
@@ -17,6 +18,16 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+
+.header__background-text {
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	top: 30%;
+	opacity: 0.1;
+	fill: #fff;
 }
 
 @import 'socials-list.scss';
@@ -64,6 +75,10 @@
 }
 
 @import 'profile.scss';
+
+.header__arrow {
+	z-index: 5;
+}
 
 .arrow {
 	display: flex;

@@ -8,8 +8,159 @@
     <link rel="stylesheet" href="./assets/styles/app.min.css">
   </head>
   <body>
-    <h1>Мои работы</h1>
-    <p>ничего не делающая кнопка! тест js-сборки</p><a class="button" href="./index.html">нажми</a>
+    <div class="wrapper works">
+      <section class="header">
+        <div class="header__container">
+          <svg class="header__background-text">
+            <use xlink:href="assets/images/sprite/sprite.svg#portfolio_header"></use>
+          </svg>
+          <div class="header__nav">
+            <div class="header__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div><a class="header__menu">
+              <div class="header__hamburger-menu"></div></a>
+          </div>
+          <div class="header__who">
+            <div class="profile">
+              <div class="profile__image"></div>
+              <div class="profile__name">Владимир Астахов</div>
+              <div class="profile__desc">Личный сайт веб разработчика</div>
+            </div>
+          </div>
+          <div class="header__arrow">
+            <div class="arrow"><a class="arrow__link" href="">
+                <svg class="arrow__icon">
+                  <use xlink:href="assets/images/sprite/sprite.svg#portf_arrow_down"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </section>
+      <div class="works__title">Мои работы
+        <div class="works__title-svg">
+          <svg class="works__title-image">
+            <use xlink:href="assets/images/sprite/sprite.svg#works_header"></use>
+          </svg>
+        </div>
+        <svg class="works__top-svg works__top-svg--left">
+          <use xlink:href="assets/images/sprite/sprite.svg#about_bg_left"></use>
+        </svg>
+        <svg class="works__top-svg works__top-svg--right">
+          <use xlink:href="assets/images/sprite/sprite.svg#about_bg_right"></use>
+        </svg>
+      </div>
+      <div class="works__content">
+        <div class="works__column works__column--left">
+          <div class="about-loft">
+            <div class="about-loft__title">Сайт школы онлайн образования</div>
+            <div class="about-loft__techs">HTML, CSS, JavaScript</div><a class="about-loft__button">
+              <svg class="about-loft__svg">
+                <use xlink:href="assets/images/sprite/sprite.svg#link"></use>
+              </svg>
+              <div class="about-loft__text">Посмотреть сайт</div></a>
+          </div>
+        </div>
+        <div class="works__column works__column--right">
+          <div class="slider">
+            <div class="slider__top"></div>
+            <div class="slider__bottom">
+              <div class="slider__bottom-left"><a class="slider__btn" href="">
+                  <svg class="slider__svg">
+                    <use xlink:href="assets/images/sprite/sprite.svg#portf_arrow_down"></use>
+                  </svg></a></div>
+              <div class="slider__bottom-right"><a class="slider__btn" href="">
+                  <svg class="slider__svg">
+                    <use xlink:href="assets/images/sprite/sprite.svg#portf_arrow_up"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="works__feedback">
+        <div class="feedback">
+          <div class="feedback__title">Что обо мне говорят</div>
+          <ul class="feedback__list">
+            <li class="feedback__item">
+              <div class="feedback__image feedback__image--1"></div>
+              <div class="feedback__desc">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+              <div class="feedback__name">Ковальчук Дмитрий</div>
+              <div class="feedback__who">- основатель Loftschool</div>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__image feedback__image--2"></div>
+              <div class="feedback__desc">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+              <div class="feedback__name">Сабанцев Владимир</div>
+              <div class="feedback__who">- преподаватель</div>
+            </li>
+          </ul>
+          <div class="feedback__form-contaner">
+            <div class="feedback__form-block">
+              <form class="feedback__form">
+                <div class="feedback__form-title">Связаться со мной</div>
+                <div class="feedback__inputs">
+                  <input class="feedback__input" type="text" placeholder="Имя">
+                  <input class="feedback__input" type="text" placeholder="Email">
+                  <textarea class="feedback__input feedback__input--textarea" placeholder="Ваше сообщение"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="feedback__buttons-row"><a class="feedback__to-main-btn">Отправить</a><a class="feedback__login-btn">Очистить</a></div>
+          </div>
+          <div class="arrow"><a class="arrow__link arrow__link--feedback" href="">
+              <svg class="arrow__icon">
+                <use xlink:href="assets/images/sprite/sprite.svg#portf_arrow_up"></use>
+              </svg></a></div>
+        </div>
+        <footer class="footer">
+          <div class="footer__top-row">
+            <div class="footer__top-left">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. </div>
+            <div class="footer__top-middle">
+              <nav class="footer__nav-menu">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="./my-works.html">Мои работы</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="./about.html">Обо мне</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="./blog.html">Блог</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Авторизация</a></li>
+                </ul>
+              </nav>
+              <div class="footer__socials socials">
+                <ul class="socials__list">
+                  <li class="socials__item"><a class="socials__link" href="">
+                      <svg class="socials__icon">
+                        <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="">
+                      <svg class="socials__icon">
+                        <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="">
+                      <svg class="socials__icon">
+                        <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__top-right">
+              <p>Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.</p>
+              <p> <span class="footer__quote">— Martin Golding</span></p>
+            </div>
+          </div>
+          <div class="footer__bottom-row">© Владимир Астахов | Создано с любовью в LoftSchool | 2016</div>
+        </footer>
+      </div>
+    </div>
     <script src="./assets/scripts/bundle.js"></script>
   </body>
 </html>

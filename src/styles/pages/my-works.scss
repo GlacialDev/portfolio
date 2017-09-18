@@ -1,0 +1,199 @@
+@import '../components/slider.scss';
+
+.works__title {
+  z-index: 1;
+  width: 100%;
+  font-family: 'sansus';
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  color: #373e42;
+  font-size: rem(63px);
+  line-height: rem(63px);
+  background-color: #f8f9f5;
+  padding-bottom: rem(30px);
+  @include line(20px);
+}
+
+.works__title-image {
+  z-index: -1;
+  position: absolute;
+  top: rem(-45px);
+  right: 0;
+  left: 33%;
+  bottom: 0;
+  width: rem(400px);
+  opacity: 0.2;
+  fill: #93c42e;
+}
+
+.works__top-svg {
+  z-index: -2;
+  width: 100%;
+  height: rem(170px);
+  position: absolute;
+  top: rem(-170px);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  &--left {
+    fill: #f8f9f5;
+    left: -25%;
+  }
+  &--right {
+    fill: #f8f9f5;
+    left: 25%;
+  }
+}
+
+.works__content {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.works__column {
+  width: 50%;
+
+  &--left {
+    background-color: #ebefe2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--right {
+    background-color: #e1e4d7;
+  }
+}
+
+.about-loft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-loft__title {
+  width: rem(320px);
+  font-family: 'sansus';
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  color: #373e42;
+  font-size: rem(35px);
+  line-height: rem(35px);
+  @include line(30px);
+}
+
+.about-loft__techs {
+  margin-top: rem(30px);
+  font-family: 'roboto';
+  font-weight: 700;
+  color: #4e8839;
+}
+
+.about-loft__button {
+  margin-top: rem(60px);
+  display: flex;
+  align-items: center;
+  background-color: rgb( 108, 156, 90 );
+  padding: rem(15px);
+  border-radius: rem(55px);
+  transition: 0.5s;
+  
+  &:hover {
+    background-color: #498039;
+  }
+}
+
+.about-loft__svg {
+  width: rem(25px);
+  height: rem(25px);
+  fill: #fff;
+}
+
+.about-loft__text {
+  margin-left: rem(20px);
+  font-family: 'roboto';
+  font-weight: 700;
+  color: #fff;
+}
+
+.works__feedback {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/works/back.png);
+  background-color: #f4f5f0;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback__title {
+  margin-top: rem(70px);
+  width: rem(350px);
+  font-family: 'sansus';
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  color: #373e42;
+  font-size: rem(63px);
+  line-height: rem(63px);
+  @include line(20px);
+}
+
+.feedback__item {
+  margin-top: rem(24px);
+  margin-bottom: rem(70px);
+  width: rem(400px);
+  padding: rem(0px) rem(10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.feedback__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.feedback__image {
+	min-width: rem(80px);
+	min-height: rem(80px);
+	width: rem(80px);
+	height: rem(80px);
+	border-radius: 50%;
+  background-size: cover;
+  &--1 {
+    background-image: url(../images/works/dima.jpg);
+    background-size: initial;
+    background-position: 0 24%;
+  }
+  &--2 {
+    background-image: url(../images/works/vova.jpg);
+  }
+}
+
+.feedback__desc, .feedback__who {
+	margin-top: rem(10px);
+	font-family: 'roboto';
+  font-weight: 500;
+  font-style: italic;
+	color: #5d5a55;
+}
+
+.feedback__name {
+	margin-top: rem(10px);
+	font-family: 'roboto';
+  font-weight: 700;
+  font-style: italic;
+	color: #4e8839;
+}
+
+@import '../components/contact-form.scss'

@@ -12,9 +12,13 @@ block content
           form.auth__form
             label.auth__input-label
               .auth__icon
+                svg.auth__image
+                  use(xlink:href="assets/images/sprite/sprite.svg#login")
               input(type="text" placeholder="Логин").auth__input
             label.auth__input-label
               .auth__icon
+                svg.auth__image
+                  use(xlink:href="assets/images/sprite/sprite.svg#password")
               input(type="password" placeholder="Пароль").auth__input
             label.auth__check
               input(type="checkbox").auth__checkbox
