@@ -2,18 +2,31 @@
   fill: #f8f9f5;
   width: 100%;
   height: rem(170px);
+  top: rem(-170px);
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
   &--left {
-    left: -25%;
+    width: 50%;
+    left: 0%;
   }
   &--right {
-    left: 25%;
+    width: 50%;
+    left: 50%;
   }
   &--works {
     z-index: -2;
-    top: rem(-170px);
+  }
+}
+
+.frame-svg--about.frame-svg--left {
+  fill: #ebefe2;
+}
+.frame-svg--about.frame-svg--right {
+  fill: #f4f5f0;
+
+  @include tablets {
+    fill: #ebefe2;
   }
 }

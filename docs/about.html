@@ -49,10 +49,15 @@
         </div>
       </section>
       <section class="about">
-        <div class="about__column about__column--left">
-          <svg class="about__top-img about__top-img--left">
+        <div class="about__top-frame">
+          <svg class="frame-svg frame-svg--left frame-svg--about">
             <use xlink:href="assets/images/sprite/sprite.svg#about_bg_left"></use>
           </svg>
+          <svg class="frame-svg frame-svg--right frame-svg--about">
+            <use xlink:href="assets/images/sprite/sprite.svg#about_bg_right"></use>
+          </svg>
+        </div>
+        <div class="about__column about__column--left">
           <div class="about__title">Обо мне
             <div class="about__title-svg">
               <svg class="about__title-image">
@@ -70,9 +75,6 @@
           </div>
         </div>
         <div class="about__column about__column--right">
-          <svg class="about__top-img about__top-img--right">
-            <use xlink:href="assets/images/sprite/sprite.svg#about_bg_right"></use>
-          </svg>
           <div class="about__my-skills">
             <div class="about__subtitle">Чем я могу быть вам полезен</div>
             <div class="about__text"> 
@@ -160,17 +162,17 @@
               <li class="contacts__item">
                 <svg class="contacts__image">
                   <use xlink:href="assets/images/sprite/sprite.svg#skype"></use>
-                </svg><span class="contacts__text">skype_kdn</span>
+                </svg><a class="contacts__text" href="skype:skype_kdn">skype_kdn</a>
               </li>
               <li class="contacts__item">
                 <svg class="contacts__image">
                   <use xlink:href="assets/images/sprite/sprite.svg#envelope2"></use>
-                </svg><span class="contacts__text">astahov@gmail.com</span>
+                </svg><a class="contacts__text" href="mailto:astahov@gmail.com">astahov@gmail.com</a>
               </li>
               <li class="contacts__item">
                 <svg class="contacts__image">
                   <use xlink:href="assets/images/sprite/sprite.svg#phone"></use>
-                </svg><span class="contacts__text">+7 931 200 93 24</span>
+                </svg><a class="contacts__text" href="skype:+79312009324?call">+7 931 200 93 24</a>
               </li>
               <li class="contacts__item">
                 <svg class="contacts__image">
@@ -194,16 +196,16 @@
               </nav>
               <div class="footer__socials socials">
                 <ul class="socials__list">
-                  <li class="socials__item"><a class="socials__link" href="">
-                      <svg class="socials__icon">
+                  <li class="socials__item"><a class="socials__link socials__link--footer" href="">
+                      <svg class="socials__icon socials__icon--footer">
                         <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
                       </svg></a></li>
-                  <li class="socials__item"><a class="socials__link" href="">
-                      <svg class="socials__icon">
+                  <li class="socials__item"><a class="socials__link socials__link--footer" href="">
+                      <svg class="socials__icon socials__icon--footer">
                         <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
                       </svg></a></li>
-                  <li class="socials__item"><a class="socials__link" href="">
-                      <svg class="socials__icon">
+                  <li class="socials__item"><a class="socials__link socials__link--footer" href="">
+                      <svg class="socials__icon socials__icon--footer">
                         <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
                       </svg></a></li>
                 </ul>

@@ -11,3 +11,9 @@
 @import 'pages/about.scss';
 @import 'pages/my-works.scss';
 @import 'pages/blog.scss';
+
+body {
+  @include tablets {
+    font-size: 14px;
+  }
+}

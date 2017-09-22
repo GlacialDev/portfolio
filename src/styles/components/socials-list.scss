@@ -15,7 +15,10 @@
 	display: inline-block;
 	&:hover .socials__icon {
     fill: #6c9c5a;
-	}
+  }
+  &:hover .socials__icon--footer {
+    fill: #fff;
+  }
 }
 
 .socials__icon {
@@ -23,4 +26,7 @@
   width: rem(35px);
   height: rem(25px);
   transition: 0.5s;
+  &--footer {
+    fill: #aaadae;
+  }
 }

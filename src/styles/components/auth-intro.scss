@@ -18,6 +18,14 @@
     background-color: rgb( 18, 38, 32 );
     opacity: 0.6;
   }
+
+  @include tablets {
+    width: rem(348px);
+  }
+
+  @media screen and (max-width: 400px) {
+		width: 90%;
+	}
 }
 
 .auth__title {
@@ -69,7 +77,7 @@
   padding: rem(10px);
   padding-left: rem(20px);
   background-color: #fff;
-  width: rem(265px);
+  width: 70%;
   border: 0px;
   border-radius: rem(0px) rem(45px) rem(45px) rem(0px);
   outline: none;
@@ -190,6 +198,10 @@
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
+  
+    @media screen and (max-width: 400px) {
+      width: 90%;
+    }
 }
 
 .auth__to-main-btn, .auth__login-btn {

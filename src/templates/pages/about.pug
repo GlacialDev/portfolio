@@ -8,9 +8,12 @@ block content
   .wrapper
     include ../common/header
     section.about
-      .about__column.about__column--left
-        svg.about__top-img.about__top-img--left
+      .about__top-frame
+        svg.frame-svg.frame-svg--left.frame-svg--about
           use(xlink:href="assets/images/sprite/sprite.svg#about_bg_left")
+        svg.frame-svg.frame-svg--right.frame-svg--about
+          use(xlink:href="assets/images/sprite/sprite.svg#about_bg_right")
+      .about__column.about__column--left
         .about__title Обо мне
           .about__title-svg
             svg.about__title-image
@@ -22,8 +25,6 @@ block content
             p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
       .about__column.about__column--right
-        svg.about__top-img.about__top-img--right
-          use(xlink:href="assets/images/sprite/sprite.svg#about_bg_right")
         .about__my-skills
           .about__subtitle Чем я могу быть вам полезен
           .about__text 
@@ -103,15 +104,15 @@ block content
             li.contacts__item
               svg.contacts__image
                 use(xlink:href="assets/images/sprite/sprite.svg#skype")
-              span.contacts__text skype_kdn
+              a(href="skype:skype_kdn").contacts__text skype_kdn
             li.contacts__item
               svg.contacts__image
                 use(xlink:href="assets/images/sprite/sprite.svg#envelope2")
-              span.contacts__text astahov@gmail.com
+              a(href="mailto:astahov@gmail.com").contacts__text astahov@gmail.com
             li.contacts__item
               svg.contacts__image
                 use(xlink:href="assets/images/sprite/sprite.svg#phone")
-              span.contacts__text +7 931 200 93 24
+              a(href="skype:+79312009324?call").contacts__text +7 931 200 93 24
             li.contacts__item
               svg.contacts__image
                 use(xlink:href="assets/images/sprite/sprite.svg#map_marker")
