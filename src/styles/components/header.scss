@@ -33,6 +33,7 @@
 @import 'socials-list.scss';
 
 .header__menu {
+	z-index: 11;
   margin-top: rem(30px);
   margin-right: rem(30px);
   display: inline-block;
@@ -41,6 +42,7 @@
 }
 
 .header__hamburger-menu {
+	transition: 0.5s;
 	border: rem(2px) solid #fff;
 	border-radius: rem(3px);
 	width: rem(25px);
@@ -85,7 +87,7 @@
 	justify-content: center;
 }
 
-.arrow__link {
+.arrow__link,  .arrow__link-b {
 	margin-bottom: rem(100px);
 	display: inline-block;
 	&:hover .arrow__icon {
@@ -100,3 +102,5 @@
 	opacity: 0.7;
 	transition: 0.5s;
 }
+
+@import './ham-menu.scss';
