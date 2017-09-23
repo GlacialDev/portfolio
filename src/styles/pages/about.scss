@@ -177,10 +177,9 @@
 .about__list {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: rem(50px);
 
   @include tablets {
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -189,6 +188,7 @@
   display: inline-block;
   width: rem(110px);
   height: rem(110px);
+  margin-bottom: rem(50px);
 }
 
 .map {
@@ -198,6 +198,10 @@
   width: 100%;
   background-image: url('../images/about/map.jpg');
   background-size: cover;
+
+  @include phones {
+    height: initial;
+  }
 }
 
 .map__container {
@@ -205,6 +209,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include phones {
+    height: 100vh;
+  }
 }
 
 .contacts {
@@ -240,6 +248,14 @@
 
   @include phones {
     width: 100%;
+    display: none;
+  }
+}
+
+.contacts--phone {
+  display: none;
+  @include phones {
+    display: flex;
   }
 }
 

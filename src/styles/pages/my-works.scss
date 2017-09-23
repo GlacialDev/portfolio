@@ -12,6 +12,11 @@
   background-color: #f8f9f5;
   padding-bottom: rem(30px);
   @include line(20px);
+
+  @include phones {
+    font-size: rem(35px);
+    line-height: rem(35px);
+  }
 }
 
 .works__title-svg {
@@ -21,12 +26,20 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+
+  @include phones {
+    top: -70%;
+  }
 }
 
 .works__title-image {
   width: rem(400px);
   opacity: 0.2;
   fill: #93c42e;
+
+  @include phones {
+    width: rem(300px);
+  }
 }
 
 .works__content {
@@ -44,10 +57,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include tablets {
+      width: 0%;
+    }
   }
 
   &--right {
     background-color: #e1e4d7;
+
+    @include tablets {
+      width: 100%;
+    }
   }
 }
 
@@ -55,6 +76,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: rem(35px);
+  padding-bottom: rem(35px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.about-loft--tablets {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
 }
 
 .about-loft__title {
@@ -66,6 +101,14 @@
   font-size: rem(35px);
   line-height: rem(35px);
   @include line(30px);
+
+  @include tablets {
+    max-width: initial;
+    //уменьшаем расстояние от заголовка до черты
+    &:after {
+      margin-top: rem(20px);
+    }
+  }
 }
 
 .about-loft__techs {
@@ -73,6 +116,10 @@
   font-family: 'roboto';
   font-weight: 700;
   color: #4e8839;
+
+  @include tablets {
+    margin-top: rem(20px);
+  }
 }
 
 .about-loft__button {
@@ -86,6 +133,10 @@
   
   &:hover {
     background-color: #498039;
+  }
+
+  @include tablets {
+    margin-top: rem(40px);
   }
 }
 
@@ -128,6 +179,11 @@
   font-size: rem(63px);
   line-height: rem(63px);
   @include line(20px);
+
+  @include phones {
+    font-size: rem(35px);
+    line-height: rem(35px);
+  }
 }
 
 .feedback__title-svg {
@@ -149,6 +205,13 @@
 .feedback__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 95%;
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .feedback__item {
@@ -156,12 +219,16 @@
   position: relative;
   margin-top: rem(24px);
   margin-bottom: rem(70px);
-  width: rem(400px);
+  max-width: rem(400px);
   padding: rem(0px) rem(10px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+  justify-content: center;
+  
+  @include phones {
+    margin-bottom: rem(40px);
+  }
 }
 
 .feedback__item-svg {

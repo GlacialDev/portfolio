@@ -96,6 +96,26 @@ block content
                   circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)").circle__second.circle-05
                 </svg>
                 span.circle__title Bower
+    .contacts.contacts--phone
+          .contacts__subtitle Контакты
+          ul.contacts__list
+            li.contacts__item
+              svg.contacts__image
+                use(xlink:href="assets/images/sprite/sprite.svg#skype")
+              a(href="skype:skype_kdn").contacts__text skype_kdn
+            li.contacts__item
+              svg.contacts__image
+                use(xlink:href="assets/images/sprite/sprite.svg#envelope2")
+              a(href="mailto:astahov@gmail.com").contacts__text astahov@gmail.com
+            li.contacts__item
+              svg.contacts__image
+                use(xlink:href="assets/images/sprite/sprite.svg#phone")
+              a(href="skype:+79312009324?call").contacts__text +7 931 200 93 24
+            li.contacts__item
+              svg.contacts__image
+                use(xlink:href="assets/images/sprite/sprite.svg#map_marker")
+              span.contacts__text Новосибирск, ул. Инская, д.14
+      
     section.map
       .map__container
         .contacts

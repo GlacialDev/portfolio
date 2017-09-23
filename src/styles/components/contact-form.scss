@@ -1,11 +1,12 @@
 .feedback__form-contaner {
-  width: rem(380px);
+  width: 90%;
+  max-width: rem(380px);
   margin-bottom: rem(70px);
 }
 
 .feedback__form-block {
   position: relative;
-  width: rem(380px);
+  width: 100%;
   font-family: 'roboto';
   font-weight: 500;
   font-style: normal;
@@ -35,6 +36,10 @@
   color: #566358;
   font-size: rem(35px);
   @include line(24px);
+
+  @include phones {
+    font-size: rem(21px);
+  }
 }
 
 .feedback__inputs {
@@ -47,7 +52,7 @@
 .feedback__input {
   margin-bottom: rem(20px);
   opacity: 0.851;
-  width: rem(340px);
+  width: 90%;
   padding: rem(15px);
   padding-left: rem(20px);
   border: rem(0px);

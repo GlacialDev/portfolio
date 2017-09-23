@@ -16,7 +16,7 @@
 
 .articles__container {
   display: flex;
-  width: 80%;
+  width: 90%;
   max-width: rem(1300px);
 }
 
@@ -24,6 +24,10 @@
   min-width: rem(270px);
   max-width: rem(270px);
   position: relative;
+
+  @include tablets {
+    display: none;
+  }
 }
 .articles__right-col {
   flex-grow: 1;
@@ -51,6 +55,10 @@
 .articles__list {
   margin-left: rem(110px);
   padding: rem(10px);
+
+  @include tablets {
+    margin-left: rem(0px);
+  }
 }
 
 .articles__title {
@@ -64,6 +72,16 @@
   border-bottom: 5px solid #ecebe4;
   padding-top: rem(70px);
   padding-bottom: rem(70px);
+
+  @include tablets {
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+  }
+
+  @include phones {
+    padding-top: rem(30px);
+    padding-bottom: rem(30px);
+  }
 
   &:nth-child(1) {
     padding-top: rem(0px);
@@ -83,4 +101,5 @@
 .articles__text {
   font-family: 'roboto';
   color: #455a64;
+  line-height: rem(24px);
 }

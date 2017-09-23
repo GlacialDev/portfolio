@@ -32,3 +32,26 @@
 	font-weight: 500;
 	color: #fff;
 }
+
+.profile__title {
+	margin-top: rem(30px);
+	z-index: 1;
+  width: 100%;
+  font-family: 'sansus';
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: rem(63px);
+  line-height: rem(63px);
+	@include line(15px);
+	
+	@include tablets {
+		font-size: rem(49px);
+		line-height: rem(35px);
+	}
+
+	@include phones {
+		font-size: rem(35px);
+		line-height: rem(35px);
+	}
+}

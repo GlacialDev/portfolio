@@ -27,8 +27,13 @@ section.header
     .header__who
       .profile
         .profile__image
-        .profile__name Владимир Астахов
-        .profile__desc Личный сайт веб разработчика
+
+        if !isBlog
+          .profile__name Владимир Астахов
+          .profile__desc Личный сайт веб разработчика
+        else
+          .profile__title Блог
+          .profile__desc Статьи, которые я написал
     .header__arrow
       .arrow
         a(href="").arrow__link

@@ -23,6 +23,10 @@
   font-weight: 300;
   color: #fff;
   padding: rem(20px);
+
+  @include phones {
+    text-align: center;
+  }
 }
 
 .footer__top-middle {
@@ -33,7 +37,6 @@
     top: 0; right: 0; bottom: 0; left: 100%;
     margin: auto;
     border: rem(1px) solid #767b7d;
-    border-radius: rem(3px);
     width: rem(1px);
     margin-top: rem(20px);
     margin-bottom: rem(20px);
@@ -44,7 +47,6 @@
     top: 0; right: 100%; bottom: 0; left: 0;
     margin: auto;
     border: rem(1px) solid #767b7d;
-    border-radius: rem(3px);
     width: rem(1px);
     margin-top: rem(20px);
     margin-bottom: rem(20px);
@@ -52,6 +54,36 @@
 
   @include tablets {
     width: 50%;
+    &:before {
+      content: initial;
+    }    
+  }
+
+
+  @include phones {
+    width: 100%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      margin: auto;
+      border: rem(1px) solid #767b7d;
+      height: rem(1px);
+      width: 80%;
+      margin-top: rem(0px);
+      margin-bottom: rem(0px);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 100%; right: 0; bottom: 0; left: 0;
+      margin: auto;
+      border: rem(1px) solid #767b7d;
+      height: rem(1px);
+      width: 80%;
+      margin-top: rem(0px);
+      margin-bottom: rem(0px);
+    }
   }
 }
 
@@ -77,6 +109,10 @@
   @include tablets {
     width: 50%;
   }
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .footer__top-right {
@@ -101,4 +137,44 @@
   font-weight: 300;
   color: #fff;
   padding: rem(8px);
+}
+
+.footer__bottom-left, .footer__bottom-middle, .footer__bottom-right {
+  display: inline-block;
+  padding-left: rem(5px);
+  padding-right: rem(5px);
+}
+
+.footer__bottom-left {
+  @include phones {
+    display: block;
+  }
+}
+
+.footer__bottom-middle {
+  position: relative;
+  padding-left: rem(7px);
+  padding-right: rem(7px);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 100%;
+    margin: auto;
+    border: rem(1px) solid #fff;
+    width: rem(1px);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0; right: 100%; bottom: 0; left: 0;
+    margin: auto;
+    border: rem(1px) solid #fff;
+    width: rem(1px);
+  }
+
+  @include phones {
+    &:after {
+      content: initial;
+    }    
+  }
 }
