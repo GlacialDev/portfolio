@@ -12,7 +12,7 @@
 @import 'pages/my-works.scss';
 @import 'pages/blog.scss';
 
-body {
+html {
   @include tablets {
     font-size: 14px;
   }
