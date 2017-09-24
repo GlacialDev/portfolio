@@ -15,6 +15,8 @@
 }
 
 .articles__container {
+  z-index: 1;
+  padding-top: rem(48px);
   display: flex;
   width: 90%;
   max-width: rem(1300px);

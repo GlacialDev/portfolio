@@ -1,6 +1,7 @@
 @import '../components/slider.scss';
 
 .works__title {
+  padding-top: rem(48px);
   z-index: 1;
   width: 100%;
   font-family: 'sansus';
@@ -20,7 +21,7 @@
 }
 
 .works__title-svg {
-  top: -40%;
+  top: -15%;  
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -28,7 +29,7 @@
   z-index: -1;
 
   @include phones {
-    top: -70%;
+    top: -30%;
   }
 }
 
