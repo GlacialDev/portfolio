@@ -17,7 +17,10 @@ function slider() {
         //номер в массиве картинки в центральном слайдере
         currentSlideNumber = 1,
         //номер в массиве картинки в маленьком правом слайдере
-        nextSlideNumber = 2;
+        nextSlideNumber = 2,
+        prevSlideNewBackground,
+        currentSlideNewBackground,
+        nextSlideNewBackground;
 
         // метод жесткого консоль-логгинга
         console.log('------------- start');
@@ -46,6 +49,8 @@ function slider() {
     } else {
       number--;
     }
+
+    return number;
   }
 
   function moveSlide() {
@@ -53,20 +58,24 @@ function slider() {
     prevSlideNumber = changeToNextNumber(prevSlideNumber);
     currentSlideNumber = changeToNextNumber(currentSlideNumber);
     nextSlideNumber = changeToNextNumber(nextSlideNumber);
+    // задаем адреса новых картинок для бекграунда
+    prevSlideNewBackground = 'url(../images/works/slides/'+imagesList[prevSlideNumber]+');';
+    currentSlideNewBackground = 'url(../images/works/slides/'+imagesList[currentSlideNumber]+');';
+    nextSlideNewBackground = 'url(../images/works/slides/'+imagesList[nextSlideNumber]+');';
 
     // метод жесткого консоль-логгинга
     console.log(prevSlideNumber);
     console.log(currentSlideNumber);
     console.log(nextSlideNumber);
     console.log('-------------');
-    console.log('url(../images/works/slides/'+imagesList[prevSlideNumber]+');');
-    console.log('url(../images/works/slides/'+imagesList[currentSlideNumber]+');');
-    console.log('url(../images/works/slides/'+imagesList[nextSlideNumber]+');');
+    console.log(prevSlideNewBackground);
+    console.log(currentSlideNewBackground);
+    console.log(nextSlideNewBackground);
 
-    //подставляем в бекграунд картинки, расположенные под новыми номерами, из массива
-    prevSlideScreen.style.backgroundImage = 'url(../images/works/slides/'+imagesList[prevSlideNumber]+');';
-    currentSlideScreen.style.backgroundImage = 'url(../images/works/slides/'+imagesList[currentSlideNumber]+');';
-    nextSlideScreen.style.backgroundImage = 'url(../images/works/slides/'+imagesList[nextSlideNumber]+');';
+    //подставляем в бекграунды новые картинки
+    prevSlideScreen.style.backgroundImage = prevSlideNewBackground;
+    currentSlideScreen.style.backgroundImage = currentSlideNewBackground;
+    nextSlideScreen.style.backgroundImage = nextSlideNewBackground;
   }
 
   // если на страничке есть слайдер, вешаем слушатель
