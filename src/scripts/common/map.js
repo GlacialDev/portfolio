@@ -91,8 +91,11 @@ function map() {
         ]
     };
   
+    var container = document.getElementById("map");
     // Создаем карту внутри элемента #map
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    if(container) {
+        var map = new google.maps.Map(container, mapOptions);
+    }
   }
   
   // Ждем полной загрузки страницы, после этого запускаем initMap()
