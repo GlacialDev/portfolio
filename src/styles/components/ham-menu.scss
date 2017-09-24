@@ -17,7 +17,26 @@
 .container--hamburger-menu {
 	overflow: hidden;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	height: 100vh;
 }
 
+.hamburger-menu__nav-list {
+	text-align: center;
+}
+
+.hamburger-menu__nav-link {
+	margin-bottom: rem(60px);
+	display: block;
+  font-family: 'sansus';
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+	font-size: rem(35px);
+	&:hover {
+		margin-bottom: rem(37px);
+		@include line(20px);
+	}
+}

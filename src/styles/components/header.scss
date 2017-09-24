@@ -33,6 +33,7 @@
 @import 'socials-list.scss';
 
 .header__menu {
+	transition: 0.5s;
 	z-index: 11;
   margin-top: rem(30px);
   margin-right: rem(30px);
@@ -40,35 +41,47 @@
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
-
 .header__hamburger-menu {
 	transition: 0.5s;
 	border: rem(2px) solid #fff;
 	border-radius: rem(3px);
-	width: rem(25px);
+	width: rem(42px);
 	position: relative;
 	background-color: currentColor;
 }
 .header__hamburger-menu:before {
 	content: '';
+	transition: 0.5s;
 	position: absolute;
 	border: rem(2px) solid #fff;
 	border-radius: rem(3px);
-	width: rem(25px);
-	top: rem(-10px);
+	width: rem(42px);
+	top: rem(-15px);
 	margin: rem(-2px);
 	background-color: currentColor;
 }
 .header__hamburger-menu:after {
 	content: '';
+	transition: 0.5s;
 	position: absolute;
 	border: rem(2px) solid #fff;
 	border-radius: rem(3px);
-	width: rem(25px);
-	top: rem(10px);
+	width: rem(42px);
+	top: rem(15px);
 	margin: rem(-2px);
 	background-color: currentColor;
 }
+.header__menu.active > .header__hamburger-menu {
+	transform: rotate(-45deg);
+}
+.header__menu.active > .header__hamburger-menu:before {
+	top: 0;
+}
+.header__menu.active > .header__hamburger-menu:after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
 
 .header__who {
 	flex-grow: 1;

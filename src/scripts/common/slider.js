@@ -22,6 +22,9 @@ function slider() {
         currentSlideNewBackground,
         nextSlideNewBackground;
 
+        console.log(prevSlideScreen);
+        console.log(currentSlideScreen);
+        console.log(nextSlideScreen);
         // метод жесткого консоль-логгинга
         console.log('------------- start');
         console.log(prevSlideNumber);
