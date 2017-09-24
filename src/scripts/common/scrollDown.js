@@ -35,16 +35,19 @@ function scrollDown(time) {
     }
   }
 
-  arrow.addEventListener('click', e => {
-    e.preventDefault();
-    scrollDestination = window.innerHeight;
-    scrollValue = scrollDestination / time;
-    needToScroll = true;
+  // если на страничке есть стрелка, вешаем слушатель
+  if(arrow) {
+    arrow.addEventListener('click', e => {
+      e.preventDefault();
+      scrollDestination = window.innerHeight;
+      scrollValue = scrollDestination / time;
+      needToScroll = true;
 
-    var move = setInterval(function() {
-      scrolling();
-    }, 1);
-  })
+      var move = setInterval(function() {
+        scrolling();
+      }, 1);
+    })
+  }
 };
 
 export default scrollDown;

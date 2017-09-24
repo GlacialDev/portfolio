@@ -24,16 +24,19 @@ function scrollUp(time) {
     }
   }
 
-  arrow.addEventListener('click', e => {
-    e.preventDefault();
-    scrollPath = window.scrollY;
-    scrollValue = -scrollPath / time;
-    needToScroll = true;
+  // если на страничке есть стрелка, вешаем слушатель
+  if(arrow) {
+    arrow.addEventListener('click', e => {
+      e.preventDefault();
+      scrollPath = window.scrollY;
+      scrollValue = -scrollPath / time;
+      needToScroll = true;
 
-    var move = setInterval(function() {
-      scrolling();
-    }, 1);
-  })
+      var move = setInterval(function() {
+        scrolling();
+      }, 1);
+    })
+  }
 };
 
 export default scrollUp;
