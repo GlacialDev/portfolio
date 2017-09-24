@@ -1,6 +1,6 @@
 function slider() {
   const slider = document.querySelector('.slider'),
-        control = document.querySelector('.slider__btn'),
+        controls = document.querySelectorAll('.slider__btn'),
         prevSlideScreen = document.querySelector('.slider__bottom-left'),
         currentSlideScreen = document.querySelector('.slider__top'),
         nextSlideScreen = document.querySelector('.slider__bottom-right');
@@ -71,7 +71,11 @@ function slider() {
 
   // если на страничке есть слайдер, вешаем слушатель
   if(slider) {
-    control.addEventListener('click', e => {
+    controls[0].addEventListener('click', e => {
+      e.preventDefault();
+      moveSlide();
+    });
+    controls[1].addEventListener('click', e => {
       e.preventDefault();
       moveSlide();
     })
