@@ -106,7 +106,7 @@ function map() {
             title: 'Наш маркер: Большой театр',
             // Стилизация маркера (задаем ему свг-иконку)
             icon: {
-                url: '../assets/images/svg/map_marker.svg',
+                url: '../images/svg/map_marker.svg',
             }
         });
         // При клике переходим в новом окне на карту
