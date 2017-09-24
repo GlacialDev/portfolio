@@ -3,7 +3,7 @@ function hamMenu() {
         button = document.querySelector('.header__hamburger-menu'),
         body = document.body;
 
-  if(button) {
+  if(button && menu) {
     button.addEventListener('click', e => {
       e.preventDefault();
       button.classList.toggle('active');
