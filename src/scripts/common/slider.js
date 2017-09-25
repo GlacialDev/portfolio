@@ -22,16 +22,6 @@ function slider() {
         currentSlideNewBackground,
         nextSlideNewBackground;
 
-        console.log(prevSlideScreen);
-        console.log(currentSlideScreen);
-        console.log(nextSlideScreen);
-        // метод жесткого консоль-логгинга
-        console.log('------------- start');
-        console.log(prevSlideNumber);
-        console.log(currentSlideNumber);
-        console.log(nextSlideNumber);
-        console.log('------------- ');
-
   // если число вылазит за максимальный номер в массиве, отправляем в начало (0)
   // иначе просто инкрементируем
   function changeToNextNumber(number) {
@@ -40,7 +30,6 @@ function slider() {
     } else {
       number = 0;
     }
-
     return number;
   };
 
@@ -52,7 +41,6 @@ function slider() {
     } else {
       number--;
     }
-
     return number;
   }
 
@@ -62,19 +50,9 @@ function slider() {
     currentSlideNumber = changeToNextNumber(currentSlideNumber);
     nextSlideNumber = changeToNextNumber(nextSlideNumber);
     // задаем адреса новых картинок для бекграунда
-    prevSlideNewBackground = 'url(assets/images/works/slides/'+imagesList[prevSlideNumber]+');';
-    currentSlideNewBackground = 'url(assets/images/works/slides/'+imagesList[currentSlideNumber]+');';
-    nextSlideNewBackground = 'url(assets/images/works/slides/'+imagesList[nextSlideNumber]+');';
-
-    // метод жесткого консоль-логгинга
-    console.log(prevSlideNumber);
-    console.log(currentSlideNumber);
-    console.log(nextSlideNumber);
-    console.log('-------------');
-    console.log(prevSlideNewBackground);
-    console.log(currentSlideNewBackground);
-    console.log(nextSlideNewBackground);
-
+    prevSlideNewBackground = "url(assets/images/works/slides/"+imagesList[prevSlideNumber]+")";
+    currentSlideNewBackground = "url(assets/images/works/slides/"+imagesList[currentSlideNumber]+")";
+    nextSlideNewBackground = "url(assets/images/works/slides/"+imagesList[nextSlideNumber]+")";
     //подставляем в бекграунды новые картинки
     prevSlideScreen.style.backgroundImage = prevSlideNewBackground;
     currentSlideScreen.style.backgroundImage = currentSlideNewBackground;
