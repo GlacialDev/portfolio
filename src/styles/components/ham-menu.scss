@@ -8,6 +8,7 @@
 	flex-direction: column;
 	overflow: hidden;
 	height: 0;
+	will-change: height;
 
 	&.active {
 		height: 100vh;
