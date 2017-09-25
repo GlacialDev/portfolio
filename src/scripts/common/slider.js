@@ -62,9 +62,9 @@ function slider() {
     currentSlideNumber = changeToNextNumber(currentSlideNumber);
     nextSlideNumber = changeToNextNumber(nextSlideNumber);
     // задаем адреса новых картинок для бекграунда
-    prevSlideNewBackground = 'url(../images/works/slides/'+imagesList[prevSlideNumber]+');';
-    currentSlideNewBackground = 'url(../images/works/slides/'+imagesList[currentSlideNumber]+');';
-    nextSlideNewBackground = 'url(../images/works/slides/'+imagesList[nextSlideNumber]+');';
+    prevSlideNewBackground = 'url(assets/images/works/slides/'+imagesList[prevSlideNumber]+');';
+    currentSlideNewBackground = 'url(assets/images/works/slides/'+imagesList[currentSlideNumber]+');';
+    nextSlideNewBackground = 'url(assets/images/works/slides/'+imagesList[nextSlideNumber]+');';
 
     // метод жесткого консоль-логгинга
     console.log(prevSlideNumber);
