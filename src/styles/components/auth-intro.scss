@@ -197,14 +197,19 @@
 .auth__buttons-row {
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 23.75rem;
   
-    @media screen and (max-width: 400px) {
-      width: 90%;
-    }
+  @include tablets {
+    width: 21.75rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 90%;
+  }
 }
 
-.auth__to-main-btn, .auth__login-btn {
+.auth__btn {
+  text-align: center;
   font-family: 'roboto';
   font-style: normal;
   font-weight: 700;
@@ -217,22 +222,32 @@
   height: rem(45px);
   transition-duration: .5s;
   cursor: pointer;
+
+  &:hover {
+    background-color: #498039;
+  }
 }
 
-.auth__to-main-btn {
+.auth__to-main {
   border-right: rem(1px) solid #9fb99e;
   border-radius: rem(0px) rem(0px) rem(0px) rem(5px);
-
-  &:hover {
-    background-color: #498039;
-  }
 }
-
-.auth__login-btn {
+.auth__login {
   border-left: rem(1px) solid #9fb99e;
   border-radius: rem(0px) rem(0px) rem(5px) rem(0px);
-
-  &:hover {
-    background-color: #498039;
-  }
+}
+.auth__to-my-works {
+  border-right: rem(1px) solid #9fb99e;
+  border-radius: rem(0px) rem(0px) rem(0px) rem(5px);
+  width: 40%;
+}
+.auth__to-about {
+  border-left: rem(1px) solid #9fb99e;
+  border-right: rem(1px) solid #9fb99e;
+  width: 33%;
+}
+.auth__to-blog {
+  border-left: rem(1px) solid #9fb99e;
+  border-radius: rem(0px) rem(0px) rem(5px) rem(0px);
+  width: 27%;
 }

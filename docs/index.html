@@ -8,52 +8,79 @@
     <link rel="stylesheet" href="./assets/styles/app.min.css">
   </head>
   <body>
-    <div class="intro-wrap">
-      <div class="intro-container">
-        <div class="auth">
-          <div class="auth__title">Авторизуйтесь</div>
-          <div class="auth__form-block">
-            <form class="auth__form">
-              <label class="auth__input-label">
-                <div class="auth__icon">
-                  <svg class="auth__image">
-                    <use xlink:href="assets/images/sprite/sprite.svg#login"></use>
-                  </svg>
-                </div>
-                <input class="auth__input" type="text" placeholder="Логин">
-              </label>
-              <label class="auth__input-label">
-                <div class="auth__icon">
-                  <svg class="auth__image">
-                    <use xlink:href="assets/images/sprite/sprite.svg#password"></use>
-                  </svg>
-                </div>
-                <input class="auth__input" type="password" placeholder="Пароль">
-              </label>
-              <label class="auth__check">
-                <input class="auth__checkbox" type="checkbox">
-                <div class="auth__checkbox-fake"></div>
-                <div class="auth__checkbox-name">Я человек</div>
-              </label>
-              <div class="auth__question">Вы точно не робот?</div>
-              <div class="auth__radio-container">
-                <label class="auth__radio-label">
-                  <input class="auth__radio" type="radio" name="radio" id="radio">
-                  <div class="auth__radio-fake"></div>
-                  <div class="auth__radio-name">Да</div>
+    <div class="intro__wrap">
+      <header class="intro__header"> <a class="intro__authorize-btn">Авторизоваться</a></header>
+      <div class="intro__flip">
+        <div class="intro__flip intro__flip--front">
+          <div class="auth">
+            <div class="auth__title">Авторизуйтесь</div>
+            <div class="auth__form-block">
+              <form class="auth__form">
+                <label class="auth__input-label">
+                  <div class="auth__icon">
+                    <svg class="auth__image">
+                      <use xlink:href="assets/images/sprite/sprite.svg#login"></use>
+                    </svg>
+                  </div>
+                  <input class="auth__input" type="text" placeholder="Логин">
                 </label>
-                <label class="auth__radio-label">
-                  <input class="auth__radio" type="radio" name="radio" id="radio">
-                  <div class="auth__radio-fake"></div>
-                  <div class="auth__radio-name">Не уверен</div>
+                <label class="auth__input-label">
+                  <div class="auth__icon">
+                    <svg class="auth__image">
+                      <use xlink:href="assets/images/sprite/sprite.svg#password"></use>
+                    </svg>
+                  </div>
+                  <input class="auth__input" type="password" placeholder="Пароль">
                 </label>
-              </div>
-            </form>
+                <label class="auth__check">
+                  <input class="auth__checkbox" type="checkbox">
+                  <div class="auth__checkbox-fake"></div>
+                  <div class="auth__checkbox-name">Я человек</div>
+                </label>
+                <div class="auth__question">Вы точно не робот?</div>
+                <div class="auth__radio-container">
+                  <label class="auth__radio-label">
+                    <input class="auth__radio" type="radio" name="radio" id="radio">
+                    <div class="auth__radio-fake"></div>
+                    <div class="auth__radio-name">Да</div>
+                  </label>
+                  <label class="auth__radio-label">
+                    <input class="auth__radio" type="radio" name="radio" id="radio">
+                    <div class="auth__radio-fake"></div>
+                    <div class="auth__radio-name">Не уверен</div>
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
+          <div class="auth__buttons-row"><a class="auth__btn auth__to-main" href="./about.html">На главную</a><a class="auth__btn auth__login">Войти</a></div>
         </div>
-        <div class="auth__buttons-row"><a class="auth__to-main-btn">На главную</a><a class="auth__login-btn" href="./about.html">Войти</a></div>
+        <div class="intro__flip intro__flip--back">
+          <div class="profile profile--intro">
+            <div class="profile__image"></div>
+            <div class="profile__name">Клименко Иван</div>
+            <div class="profile__desc">Личный сайт веб разработчика</div>
+            <div class="profile__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="https://vk.com/kleverion">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://github.com/Glacialix">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="auth__buttons-row"><a class="auth__btn auth__to-my-works" href="./my-works.html">Мои работы</a><a class="auth__btn auth__to-about" href="./about.html">Обо мне</a><a class="auth__btn auth__to-blog" href="./blog.html">Блог</a></div>
+        </div>
       </div>
-      <footer class="intro-footer">© Владимир Астахов | создано с любовью в LoftSchool | 2016</footer>
+      <footer class="intro__footer">© Клименко Иван | создано с любовью в LoftSchool | 2017</footer>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_t50Z-eElO7Vh1qS8isXyOCabHeGNhSI"></script>
     <script src="./assets/scripts/bundle.js"></script>

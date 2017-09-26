@@ -1,31 +1,69 @@
 .profile {
-	width: rem(400px);
+	width: rem(380px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
+	&--intro {
+		position: relative;
+		padding: rem(40px) rem(0px);
+		&:before {
+			content: " ";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			display: block;
+			border-radius: 0.3125rem 0.3125rem 0rem 0rem;
+			background-color: #122620;
+			opacity: 0.6;
+		}
+
+		@include tablets {
+			width: rem(348px);
+		}
+	
+		@media screen and (max-width: 400px) {
+			width: 90%;
+		}
+	}
 }
 
 .profile__image {
+	position: relative;
 	min-width: rem(150px);
 	min-height: rem(150px);
 	width: rem(150px);
 	height: rem(150px);
 	border-radius: 50%;
 	background-image: url(../images/about/fashmark-men-trends-nature.jpg);
-	background-size: contain;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .profile__name {
+	position: relative;
 	text-align: center;
 	margin-top: rem(30px);
 	font-family: 'roboto';
 	font-weight: 700;
-	font-size: 35px;
+	font-size: rem(35px);
 	color: #fff;
+
+	@include tablets {
+		font-size: rem(28px);
+	}
+
+	@include phones {
+		font-size: rem(21px);
+	}
 }
 
 .profile__desc {
+	position: relative;
 	text-align: center;
 	margin-top: rem(10px);
 	font-family: 'roboto';
