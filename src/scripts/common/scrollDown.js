@@ -1,6 +1,6 @@
 'use strict'
 
-function scrollDown(time) {
+function scrollDown(value) {
   const arrow = document.querySelector('.arrow__link');
         // куда скроллить, значение задается при клике через обработчик
   let   scrollDestination, 
@@ -12,19 +12,8 @@ function scrollDown(time) {
         // флаг
         needToScroll = false;
 
-        // ------------------
-        // счетчик милисекунд
-        // var i = 0;
-
   function scrolling() {
     if(needToScroll) {
-
-      // ------------------
-      // счетчик милисекунд
-      // i++;
-      // console.log(i);
-      // ------------------
-
       // задаем переменной начальную высоту
       scrollTo = window.scrollY,
       // с каждой итерацией изменяем высоту до которой надо прокрутить
@@ -42,7 +31,7 @@ function scrollDown(time) {
     arrow.addEventListener('click', e => {
       e.preventDefault();
       scrollDestination = window.innerHeight;
-      scrollValue = scrollDestination / time;
+      scrollValue = value;
       needToScroll = true;
 
       var move = setInterval(function() {

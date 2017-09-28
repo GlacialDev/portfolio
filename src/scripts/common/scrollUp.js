@@ -1,6 +1,6 @@
 'use strict'
 
-function scrollUp(time) {
+function scrollUp(value) {
   const arrow = document.querySelector('.arrow__link-b');
         // определяем расстояние скролла, значение задается при клике через обработчик
   let   scrollPath, 
@@ -31,7 +31,7 @@ function scrollUp(time) {
     arrow.addEventListener('click', e => {
       e.preventDefault();
       scrollPath = window.scrollY;
-      scrollValue = -scrollPath / time;
+      scrollValue = -value;
       needToScroll = true;
 
       var move = setInterval(function() {

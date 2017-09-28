@@ -1,11 +1,12 @@
 'use strict'
 
 function slider() {
-  const slider = document.querySelector('.slider'),
-        controls = document.querySelectorAll('.slider__btn'),
-        prevSlideScreen = document.querySelector('.slider__bottom-left'),
-        currentSlideScreen = document.querySelector('.slider__top'),
-        nextSlideScreen = document.querySelector('.slider__bottom-right');
+  const _document = document,
+        slider = _document.querySelector('.slider'),
+        controls = _document.querySelectorAll('.slider__btn'),
+        prevSlideScreen = _document.querySelector('.slider__bottom-left'),
+        currentSlideScreen = _document.querySelector('.slider__top'),
+        nextSlideScreen = _document.querySelector('.slider__bottom-right');
         //список картинок в слайдере
   let   imagesList = [
           'slide0.png',
