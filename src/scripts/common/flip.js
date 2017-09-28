@@ -1,25 +1,25 @@
+'use strict'
+
 function flip() {
-  const front = document.querySelector('.intro__flip--front'),
-        back = document.querySelector('.intro__flip--back'),
-        login = document.querySelector('.auth__login'),
-        button = document.querySelector('.intro__authorize-btn');
+  const doc = document,
+        front = doc.querySelector('.intro__flip--front'),
+        back = doc.querySelector('.intro__flip--back'),
+        login = doc.querySelector('.auth__login'),
+        button = doc.querySelector('.intro__authorize-btn');
+ 
+  const invert = (e) => {
+    e.preventDefault();
+    front.classList.toggle('inverted');
+    back.classList.toggle('inverted');
+    button.classList.toggle('inverted');
+  }
 
   if(login) {
-    login.addEventListener('click', e => {
-      e.preventDefault();
-      front.classList.toggle('inverted');
-      back.classList.toggle('inverted');
-      button.classList.toggle('inverted');
-    });
+    login.addEventListener('click', invert);
   }
 
   if(button) {
-    button.addEventListener('click', e => {
-      e.preventDefault();
-      front.classList.toggle('inverted');
-      back.classList.toggle('inverted');
-      button.classList.toggle('inverted');
-    });
+    button.addEventListener('click', invert);
   }
 };
 

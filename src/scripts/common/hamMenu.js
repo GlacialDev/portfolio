@@ -1,7 +1,10 @@
+'use strict'
+
 function hamMenu() {
-  const menu = document.querySelector('.hamburger-menu'),
-        button = document.querySelector('.header__menu'),
-        body = document.body;
+  const doc = document,
+        menu = doc.querySelector('.hamburger-menu'),
+        button = doc.querySelector('.header__menu'),
+        body = doc.body;
 
   if(button && menu) {
     button.addEventListener('click', e => {

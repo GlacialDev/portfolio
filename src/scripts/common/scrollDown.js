@@ -1,3 +1,5 @@
+'use strict'
+
 function scrollDown(time) {
   const arrow = document.querySelector('.arrow__link');
         // куда скроллить, значение задается при клике через обработчик

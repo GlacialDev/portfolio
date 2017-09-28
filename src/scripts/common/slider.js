@@ -1,3 +1,5 @@
+'use strict'
+
 function slider() {
   const slider = document.querySelector('.slider'),
         controls = document.querySelectorAll('.slider__btn'),

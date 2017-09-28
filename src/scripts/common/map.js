@@ -1,3 +1,5 @@
+'use strict'
+
 function map() {
 // initMap() - функция инициализации карты
   function initMap() {
