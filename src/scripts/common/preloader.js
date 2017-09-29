@@ -1,9 +1,11 @@
 'use strict';
 
 function preloader() {
-  
+  const preloader = document.querySelector('.preloader');
+
   window.onload = function() {
-    document.querySelector('.preloader').classList.add('contentLoaded');
+    preloader.classList.add('contentLoaded');
+    preloader.style.display="none";
   };
 
 }
