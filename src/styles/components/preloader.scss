@@ -1,0 +1,52 @@
+.preloader {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/intro/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100000;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(108, 156, 90, 0.87);
+    z-index: 100001;
+    transition: 1s;
+  }
+
+  &.contentLoaded {
+    opacity: 0;
+    
+  }
+
+  &.contentLoaded .preloader:after {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.preloader__status {
+  z-index: 100002;
+  width: rem(80px);
+  height: rem(95px);
+}
+
+.preloader__progress {
+  width: rem(80px);
+  height: rem(95px);
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 100;
+}

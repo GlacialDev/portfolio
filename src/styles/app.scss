@@ -6,6 +6,7 @@
 @import 'common/fonts.scss';
 
 @import 'components/top-frame.scss';
+@import 'components/preloader.scss';
 
 @import 'pages/intro.scss';
 @import 'pages/about.scss';
@@ -20,8 +21,4 @@ html {
 
 body.overflow {
   overflow-y: hidden;
-}
-
-.wrapper {
-  transform: translateY(0vh);
 }
