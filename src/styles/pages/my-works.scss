@@ -1,5 +1,9 @@
 @import '../components/slider.scss';
 
+.img {
+  display: none;
+}
+
 .works__title {
   padding-top: rem(48px);
   z-index: 1;
