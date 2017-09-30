@@ -1,4 +1,3 @@
-import preloader from './common/preloader';
 import flip from './common/flip';
 import scrollDown from './common/scrollDown';
 import scrollUp from './common/scrollUp';
@@ -10,11 +9,10 @@ import sidebarCreate from './common/sidebarCreate';
 import sidebarStyles from './common/sidebarStyles';
 import sidebarBehavior from './common/sidebarBehavior';
 
-preloader();
 flip();
 scrollDown(10);
 scrollUp(20);
-hamMenu();
+hamMenu(); 
 slider();
 map();
 skillsAnimation();

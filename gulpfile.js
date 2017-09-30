@@ -77,6 +77,11 @@ function scripts() {
     .pipe(gulpWebpack(webpackConfig, webpack))
     .pipe(gulp.dest(paths.scripts.dest));
 }
+function scriptPreload() {
+  return gulp.src('src/scripts/preload.js')
+  .pipe(gulpWebpack(webpackConfig, webpack))
+  .pipe(gulp.dest(paths.scripts.dest));
+}
 // перенос картинок 
 function images() {
   return gulp.src(paths.images.src)
@@ -93,6 +98,7 @@ function watch() {
   gulp.watch(paths.templates.src, templates);
   gulp.watch(paths.images.src, images);
   gulp.watch(paths.scripts.src, scripts);
+  gulp.watch(paths.scripts.src, scriptPreload);
   gulp.watch(paths.fonts.src, fonts);
 }
 // следим за папкой билд, обновляем страничку
@@ -143,11 +149,11 @@ gulp.task('svgsprite', function () {
 });
 //develop
 gulp.task('default', gulp.series (
-  gulp.parallel(styles, templates, images, scripts, fonts),
+  gulp.parallel(styles, templates, images, scripts, scriptPreload, fonts),
   gulp.parallel(watch, server)
 ));
 //production
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, templates, images, scripts, fonts)
+  gulp.parallel(styles, templates, images, scripts, scriptPreload, fonts)
 ));
