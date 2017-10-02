@@ -11,7 +11,7 @@ const fileMapsPath = 'assets/images/water/water-maps.jpg';
 function water() {
 
   let canvas=document.querySelector(canvasSelector);
-
+ 
   let textureAlign={x:0.5,y:0.9};
   let textures=[
     {
