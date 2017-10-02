@@ -13,7 +13,13 @@ const config = {
     new UglifyJSPlugin({
       sourceMap: true
     })
-  ]
+  ],
+  module: {
+    rules: [{
+      test: /\.(frag|vert)$/,
+      use: "webpack-glsl-loader"
+    }]
+  }
 };
 
 module.exports = config;

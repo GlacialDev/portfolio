@@ -8,6 +8,7 @@ import skillsAnimation from './common/skillsAnimation';
 import sidebarCreate from './common/sidebarCreate';
 import sidebarStyles from './common/sidebarStyles';
 import sidebarBehavior from './common/sidebarBehavior';
+import water from './water/index-water';
 
 flip();
 scrollDown(10);
@@ -19,3 +20,4 @@ skillsAnimation();
 sidebarCreate();
 sidebarStyles();
 sidebarBehavior(25);
+water();
