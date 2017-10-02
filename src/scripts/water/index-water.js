@@ -8,6 +8,7 @@ const canvasSelector = '.intro__canvas';
 const filePath = '../images/water/water.jpg';
 const fileMapsPath = '../images/water/water-maps.jpg';
 
+
 function water() {
 
   let canvas=document.querySelector(canvasSelector);
