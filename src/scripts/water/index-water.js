@@ -5,8 +5,8 @@ import TweenLite from 'gsap'
 
 const divSelector = '.intro__wrap';
 const canvasSelector = '.intro__canvas';
-const filePath = 'assets/images/water/water.jpg';
-const fileMapsPath = 'assets/images/water/water-maps.jpg';
+const filePath = '../images/water/water.jpg';
+const fileMapsPath = '../assets/images/water/water-maps.jpg';
 
 function water() {
 
