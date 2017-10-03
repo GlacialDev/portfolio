@@ -18,8 +18,8 @@ function skillsAnimation() {
   // если да - показываем проценты, если нет - убираем их
   _window.addEventListener('scroll', function() {
     // размеры области проверки
-    topBorderDetector = _window.scrollY + 0.10*_window.innerHeight,
-    bottomBorderDetector = _window.scrollY + 0.90*_window.innerHeight;
+    topBorderDetector = _window.scrollY + 0.05*_window.innerHeight,
+    bottomBorderDetector = _window.scrollY + 0.95*_window.innerHeight;
     // проверка входит ли элемент в зону для анимирования
     svgList.forEach(function(item, i, svgList) {
       realItemHeight = item.parentElement.offsetTop + _window.innerHeight;

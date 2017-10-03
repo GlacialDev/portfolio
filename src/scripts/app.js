@@ -20,4 +20,5 @@ skillsAnimation();
 sidebarCreate();
 sidebarStyles();
 sidebarBehavior(25);
-water();
+water('.intro__wrap', '.intro__canvas');
+water('.header__container', '.header__canvas');
