@@ -62,16 +62,14 @@ function slider() {
     nextSlideScreen.style.backgroundImage = nextSlideNewBackground;
   }
 
+  const sliderBehavior = e => {
+    e.preventDefault();
+    moveSlide();
+  }
   // если на страничке есть слайдер, вешаем слушатель
   if(slider) {
-    controls[0].addEventListener('click', e => {
-      e.preventDefault();
-      moveSlide();
-    });
-    controls[1].addEventListener('click', e => {
-      e.preventDefault();
-      moveSlide();
-    })
+    controls[0].addEventListener('click', sliderBehavior);
+    controls[1].addEventListener('click', sliderBehavior)
   }
 }
 

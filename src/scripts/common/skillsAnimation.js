@@ -9,18 +9,14 @@ function skillsAnimation() {
         svgList = Array.prototype.slice.call(svg);
   let   // линии детекторы определяют зону на экране, в пределах которой
         // будут анимироваться диаграммы скиллов
-        topBorderDetector,
-        bottomBorderDetector,
+        topBorderDetector = 0.05 * _window.innerHeight,
+        bottomBorderDetector = 0.95 * _window.innerHeight,
         realItemHeight;
-
 
   // когда скроллим страницу, проверяем, находится ли высота элемента
   // в зоне между линиями-детекторами
   // если да - показываем проценты, если нет - убираем их
-  _window.addEventListener('scroll', function() {
-    // размеры области проверки
-    topBorderDetector = 0.05*_window.innerHeight,
-    bottomBorderDetector = 0.95*_window.innerHeight;
+  const skillsBehavior = e => {
     // проверка входит ли элемент в зону для анимирования
     svgList.forEach(function(item, i, svgList) {
       realItemHeight = item.getBoundingClientRect().y;
@@ -30,7 +26,10 @@ function skillsAnimation() {
         item.classList.remove('animate'); 
       }
     });
-  });
+  }
+
+  _window.addEventListener('scroll', skillsBehavior);
+
 }
 
 export default skillsAnimation;

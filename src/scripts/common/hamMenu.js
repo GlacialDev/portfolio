@@ -6,14 +6,14 @@ function hamMenu() {
         button = _document.querySelector('.header__menu'),
         body = _document.body;
 
-  if(button && menu) {
-    button.addEventListener('click', e => {
-      e.preventDefault();
-      button.classList.toggle('active');
-      menu.classList.toggle('active');
-      body.classList.toggle('overflow');
-    });
+  const menuBehavior = e => {
+    e.preventDefault();
+    button.classList.toggle('active');
+    menu.classList.toggle('active');
+    body.classList.toggle('overflow');
   }
+
+  if(button && menu) button.addEventListener('click', menuBehavior);
 };
 
 export default hamMenu;

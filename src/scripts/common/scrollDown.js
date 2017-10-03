@@ -1,12 +1,13 @@
 'use strict'
 
 function scrollDown(value) {
-  const arrow = document.querySelector('.arrow__link');
+  const arrow = document.querySelector('.arrow__link'),
+        _window = window;
         // куда скроллить, значение задается при клике через обработчик
   let   scrollDestination, 
         // на сколько скроллить за одну итерацию функции setInterval внизу (аналог скорости)
         // значение задается при клике через обработчик
-        scrollValue,
+        scrollValue = value,
         // начальная высота откуда скроллим
         scrollTo,
         // флаг
@@ -18,7 +19,7 @@ function scrollDown(value) {
       scrollTo = window.scrollY,
       // с каждой итерацией изменяем высоту до которой надо прокрутить
       scrollTo = scrollTo + scrollValue;
-      window.scroll(0, scrollTo);
+      _window.scroll(0, scrollTo);
       // крутим пока не переключится флаг, т.е. пока не прокрутим один экран
       if (scrollTo > scrollDestination) {
         needToScroll = false;
@@ -26,19 +27,19 @@ function scrollDown(value) {
     }
   }
 
-  // если на страничке есть стрелка, вешаем слушатель
-  if(arrow) {
-    arrow.addEventListener('click', e => {
-      e.preventDefault();
-      scrollDestination = window.innerHeight;
-      scrollValue = value;
-      needToScroll = true;
+  const scrollAction = e => {
+    e.preventDefault();
+    scrollDestination = window.innerHeight;
+    needToScroll = true;
 
-      var move = setInterval(function() {
-        scrolling();
-      }, 1);
-    })
+    var move = setInterval(function() {
+      scrolling();
+    }, 1);
   }
+
+  // если на страничке есть стрелка, вешаем слушатель
+  if(arrow) arrow.addEventListener('click', scrollAction)
+  
 };
 
 export default scrollDown;

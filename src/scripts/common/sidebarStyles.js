@@ -21,11 +21,11 @@ function sidebarStyles() {
     function fixedMenu() {
       // если доскроллили до блога - фиксируем сайдбар
       if(_window.scrollY > sidebarStartHeight) {
-        sidebar.classList.add('fix');
+        sidebar.classList.add('fixed');
       }
       // если скроллим обратно до хедера - оставляем его где он был
       if(_window.scrollY < sidebarStartHeight) {
-        sidebar.classList.remove('fix');
+        sidebar.classList.remove('fixed');
       }
     };
     

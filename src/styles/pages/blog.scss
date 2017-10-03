@@ -1,12 +1,12 @@
 .sidebar {
+  z-index: 10;
   position: absolute;
   top: 100vh;
   left: 5%;
-  z-index: 1;
   padding: rem(10px);
   padding-top: rem(58px);
   
-  &.fix {
+  &.fixed {
     position: fixed;
     top: 0;
   }

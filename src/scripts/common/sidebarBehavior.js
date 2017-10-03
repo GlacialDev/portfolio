@@ -54,7 +54,7 @@ function sidebarBehavior(value) {
         // с каждой итерацией изменяем высоту до которой надо прокрутить
         scrollCurrentValue = scrollCurrentValue - scrollValue;
         // пока не достигнем нужной высоты
-        window.scroll(0, scrollCurrentValue);
+        _window.scroll(0, scrollCurrentValue);
       }
     }
 
@@ -63,7 +63,7 @@ function sidebarBehavior(value) {
         // с каждой итерацией изменяем высоту до которой надо прокрутить
         scrollCurrentValue = scrollCurrentValue + scrollValue;
         // пока не достигнем нужной высоты
-        window.scroll(0, scrollCurrentValue);
+        _window.scroll(0, scrollCurrentValue);
       }
     } 
   }
