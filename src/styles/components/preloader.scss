@@ -37,13 +37,8 @@
   }
 }
 
-.preloader__status {
-  z-index: 100002;
-  width: rem(80px);
-  height: rem(95px);
-}
-
 .preloader__progress {
+  z-index: 100002;
   width: rem(80px);
   height: rem(95px);
   stroke: #fff;
