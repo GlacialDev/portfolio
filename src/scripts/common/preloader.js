@@ -12,11 +12,11 @@ function preloader() {
   // медленно считаем проценты, пока виндоу не загрузилось
   const preCounting = setInterval(function() {
     let counter = _document.querySelector('.preloader__percent');
-    if (num < 100) { 
+    if (num < 95) { 
       num++;
       if (counter) counter.innerHTML = num;
     }
-  }, 200);
+  }, 300);
     
   // когда контент загружается, убираем прелоадер и разрешаем скролл
   _window.onload = function() {
