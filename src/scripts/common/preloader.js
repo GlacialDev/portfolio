@@ -43,7 +43,7 @@ function preloader() {
           preloader.classList.add('contentLoaded');
           setTimeout(removePreloader, 800);
         }
-      }, 20);
+      }, 10);
     })();
   };
 }
