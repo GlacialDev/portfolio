@@ -59,6 +59,7 @@
 }
 
 .auth__input-label {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -83,7 +84,32 @@
   outline: none;
 }
 
+.auth__error {
+  z-index: 1;
+  position: absolute;
+  top: 110%;
+  padding: rem(15px) rem(20px);
+  font-family: 'roboto';
+  font-weight: 700;
+  color: #fff;
+  background-color: #e44845;
+  border-radius: rem(5px);
+
+  &:before {
+    z-index: -1;
+    content: ' ';
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    height: rem(24px);
+    width: rem(24px);
+    transform: rotate(-45deg);
+    background-color: #e44845;
+  }
+}
+
 .auth__check {
+  position: relative;
   display: block;
   width: 100%;
   justify-content: center;
@@ -141,13 +167,16 @@
 }
 
 .auth__radio-container {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.auth__radio-label:nth-last-child(1) {
-  margin-left: rem(35px);
+.auth__radio-label {
+  &:nth-child(2) {
+    margin-left: rem(35px);
+  }
 }
 
 .auth__radio {

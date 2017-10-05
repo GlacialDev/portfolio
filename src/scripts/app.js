@@ -1,4 +1,5 @@
 import flip from './common/flip';
+import authorization from './common/authorization';
 import scrollDown from './common/scrollDown';
 import scrollUp from './common/scrollUp';
 import hamMenu from './common/hamMenu';
@@ -11,6 +12,7 @@ import sidebarBehavior from './common/sidebarBehavior';
 import water from './water/index-water';
 
 flip();
+authorization();
 scrollDown(10);
 scrollUp(20);
 hamMenu(); 

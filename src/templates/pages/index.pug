@@ -5,13 +5,35 @@ block variables
   - var isBlog = false
 
 block content
-  .img
   .intro__wrap
     canvas.intro__canvas
     header.intro__header 
       a.intro__authorize-btn Авторизоваться
     .intro__flip
       .intro__flip.intro__flip--front
+        .profile.profile--intro
+          .profile__image
+          .profile__name Клименко Иван
+          .profile__desc Личный сайт веб разработчика
+          .profile__socials.socials
+            ul.socials__list
+              li.socials__item
+                a(href="https://vk.com/kleverion").socials__link
+                  svg.socials__icon
+                    use(xlink:href="assets/images/sprite/sprite.svg#vk")
+              li.socials__item
+                a(href="https://github.com/Glacialix").socials__link
+                  svg.socials__icon
+                    use(xlink:href="assets/images/sprite/sprite.svg#github")
+              li.socials__item
+                a(href="").socials__link
+                  svg.socials__icon
+                    use(xlink:href="assets/images/sprite/sprite.svg#in")
+        .auth__buttons-row
+          a.auth__btn.auth__to-my-works(href="./my-works.html") Мои работы
+          a.auth__btn.auth__to-about(href="./about.html") Обо мне
+          a.auth__btn.auth__to-blog(href="./blog.html") Блог
+      .intro__flip.intro__flip--back
         .auth
           .auth__title Авторизуйтесь
           .auth__form-block
@@ -43,27 +65,5 @@ block content
         .auth__buttons-row
           a.auth__btn.auth__to-main(href="./about.html") На главную
           a.auth__btn.auth__login Войти
-      .intro__flip.intro__flip--back
-        .profile.profile--intro
-          .profile__image
-          .profile__name Клименко Иван
-          .profile__desc Личный сайт веб разработчика
-          .profile__socials.socials
-            ul.socials__list
-              li.socials__item
-                a(href="https://vk.com/kleverion").socials__link
-                  svg.socials__icon
-                    use(xlink:href="assets/images/sprite/sprite.svg#vk")
-              li.socials__item
-                a(href="https://github.com/Glacialix").socials__link
-                  svg.socials__icon
-                    use(xlink:href="assets/images/sprite/sprite.svg#github")
-              li.socials__item
-                a(href="").socials__link
-                  svg.socials__icon
-                    use(xlink:href="assets/images/sprite/sprite.svg#in")
-        .auth__buttons-row
-          a.auth__btn.auth__to-my-works(href="./my-works.html") Мои работы
-          a.auth__btn.auth__to-about(href="./about.html") Обо мне
-          a.auth__btn.auth__to-blog(href="./blog.html") Блог
+        
     footer.intro__footer © Клименко Иван | создано с любовью в LoftSchool | 2017

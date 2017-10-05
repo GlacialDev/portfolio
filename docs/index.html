@@ -18,12 +18,35 @@
         <text class="preloader__percent" stroke="none" transform="matrix(1 0 0 1 25.9785 20.5957)" font-family="'ArialMT'" font-size="24">0</text>
       </svg>
     </div>
-    <div class="img"></div>
     <div class="intro__wrap">
       <canvas class="intro__canvas"></canvas>
       <header class="intro__header"> <a class="intro__authorize-btn">Авторизоваться</a></header>
       <div class="intro__flip">
         <div class="intro__flip intro__flip--front">
+          <div class="profile profile--intro">
+            <div class="profile__image"></div>
+            <div class="profile__name">Клименко Иван</div>
+            <div class="profile__desc">Личный сайт веб разработчика</div>
+            <div class="profile__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="https://vk.com/kleverion">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://github.com/Glacialix">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="">
+                    <svg class="socials__icon">
+                      <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="auth__buttons-row"><a class="auth__btn auth__to-my-works" href="./my-works.html">Мои работы</a><a class="auth__btn auth__to-about" href="./about.html">Обо мне</a><a class="auth__btn auth__to-blog" href="./blog.html">Блог</a></div>
+        </div>
+        <div class="intro__flip intro__flip--back">
           <div class="auth">
             <div class="auth__title">Авторизуйтесь</div>
             <div class="auth__form-block">
@@ -66,30 +89,6 @@
             </div>
           </div>
           <div class="auth__buttons-row"><a class="auth__btn auth__to-main" href="./about.html">На главную</a><a class="auth__btn auth__login">Войти</a></div>
-        </div>
-        <div class="intro__flip intro__flip--back">
-          <div class="profile profile--intro">
-            <div class="profile__image"></div>
-            <div class="profile__name">Клименко Иван</div>
-            <div class="profile__desc">Личный сайт веб разработчика</div>
-            <div class="profile__socials socials">
-              <ul class="socials__list">
-                <li class="socials__item"><a class="socials__link" href="https://vk.com/kleverion">
-                    <svg class="socials__icon">
-                      <use xlink:href="assets/images/sprite/sprite.svg#vk"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="https://github.com/Glacialix">
-                    <svg class="socials__icon">
-                      <use xlink:href="assets/images/sprite/sprite.svg#github"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="">
-                    <svg class="socials__icon">
-                      <use xlink:href="assets/images/sprite/sprite.svg#in"></use>
-                    </svg></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="auth__buttons-row"><a class="auth__btn auth__to-my-works" href="./my-works.html">Мои работы</a><a class="auth__btn auth__to-about" href="./about.html">Обо мне</a><a class="auth__btn auth__to-blog" href="./blog.html">Блог</a></div>
         </div>
       </div>
       <footer class="intro__footer">© Клименко Иван | создано с любовью в LoftSchool | 2017</footer>

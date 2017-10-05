@@ -40,8 +40,8 @@
   font-family: 'roboto';
   font-weight: 700;
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
+  visibility: initial;
+  opacity: 1;
 
   @include phones {
     margin-right: rem(0px);
@@ -53,8 +53,8 @@
   }
 
   &.inverted {
-    visibility: initial;
-    opacity: 1;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 

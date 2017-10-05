@@ -14,7 +14,7 @@ function flip() {
     button.classList.toggle('inverted');
   }
 
-  if(login) login.addEventListener('click', invert);
+  // if(login) login.addEventListener('click', invert);
   if(button) button.addEventListener('click', invert);
   
 };
