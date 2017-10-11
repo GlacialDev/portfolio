@@ -1,0 +1,41 @@
+.panel {
+
+  &__category-list {
+    max-height: 380px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__skill-input {
+    max-width: 50px;
+  }
+
+  &__skill-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__skill-label {
+    display: flex;
+    align-items: center;
+  
+    &:hover {
+      .panel__skill-remove {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__skill-remove {
+    transition: 0.2s;
+    opacity: 0.00001;
+    padding: 3px 10px;
+  }
+
+  &__skill-name {
+    padding: 0px 10px;
+    width: 128px;
+  }
+}

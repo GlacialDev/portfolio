@@ -1,0 +1,10 @@
+.panel {
+  &__form--works {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__works-title, &__works-techs {
+    width: 300px;
+  }
+}

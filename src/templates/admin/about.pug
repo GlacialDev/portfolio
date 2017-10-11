@@ -1,0 +1,36 @@
+.panel__title Страница «Обо мне»
+ul.panel__category-list
+  li.panel__category-item
+    .panel__subtitle Frontend
+    ul.panel__skill-list
+      li.panel__skill-item
+
+        label.panel__skill-label
+          button.panel__skill-remove -
+          .panel__skill-name html
+          input(type="input" maxlength="3").panel__input.panel__skill-input
+          span.panel__dimension %
+      
+  li.panel__category-item
+    .panel__subtitle Backend
+    ul.panel__skill-list
+      li.panel__skill-item
+
+        label.panel__skill-label
+          button.panel__skill-remove -
+          .panel__skill-name node.js
+          input(type="input" maxlength="3").panel__input.panel__skill-input
+          span.panel__dimension %
+      
+  li.panel__category-item
+    .panel__subtitle Workflow
+    ul.panel__skill-list
+      li.panel__skill-item
+
+        label.panel__skill-label
+          button.panel__skill-remove -
+          .panel__skill-name git
+          input(type="input" maxlength="3").panel__input.panel__skill-input
+          span.panel__dimension %
+      
+button(type="submit").panel__button Сохранить

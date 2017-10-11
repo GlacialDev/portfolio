@@ -1,0 +1,20 @@
+extends ../template
+
+block variables
+  - var title = 'Админка'
+
+block content
+  .wrapper.admin
+    .admin__header
+      .admin__title Панель администрирования
+      a(href="").admin__back-btn Вернуться на сайт
+    .admin__nav-menu
+      ul.admin__nav-list
+        li.admin__nav-item
+          a(href="").admin__nav-btn Обо мне
+        li.admin__nav-item
+          a(href="").admin__nav-btn Блог
+        li.admin__nav-item
+          a(href="").admin__nav-btn Мои работы
+    .panel
+      include ../admin/about

@@ -1,0 +1,41 @@
+.panel {
+  &__form--blog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__blog-title, &__blog-date {
+    width: 300px;
+  }
+
+  &__blog-content {
+    width: 500px;
+    min-height: 170px;
+    resize: none;
+  }
+
+  &__upload-img {
+    margin: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__upload-icon {
+    background: url('../images/admin/icons/image-pic.svg') center center no-repeat;
+    width: 35px;
+    height: 34px;
+  }
+
+  &__upload-text {
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 500;
+    color: #6c9c5a;
+  }
+
+  &__upload-input {
+    display: none;
+  }
+}
