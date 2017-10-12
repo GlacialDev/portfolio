@@ -1,5 +1,9 @@
 .panel__title Страница «Блог»
 .panel__subtitle Добавить запись
+if (msgblog)
+  .status
+    .status__text= msgblog
+    button.panel__button.panel__button--close Закрыть
 form.panel__form.panel__form--blog(action="post")
   input.panel__input.panel__blog-title(type="text" placeholder="Название")
   input.panel__input.panel__blog-date(type="date")
