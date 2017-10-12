@@ -8,8 +8,17 @@
     align-items: flex-start;
   }
 
-  &__skill-input {
-    max-width: 50px;
+  &__input {
+    &--skillname { 
+      margin-left: 25px;
+      width: 128px;
+    }
+    &--percent {
+      max-width: 60px;
+    }
+    &--hidden {
+      display: none;
+    }
   }
 
   &__skill-item {

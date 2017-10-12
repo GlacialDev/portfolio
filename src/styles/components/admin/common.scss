@@ -8,6 +8,12 @@
   background-image: url(../images/admin/background.jpg);
   background-size: cover;
 
+  &__form {
+    &--skills {
+      display: flex;
+    }
+  }
+
   &__title {
     font-size: 21px;
     font-weight: 700;
@@ -43,6 +49,11 @@
 
     &--close {
       margin-left: 0px;
+    }
+
+    &--create {
+      margin-top: 0px;
+      margin-left: 5px;
     }
 
     &:hover {
