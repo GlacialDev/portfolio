@@ -30,5 +30,7 @@
     "webpack": "^3.5.6",
     "webpack-glsl-loader": "^1.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-autoprefixer": "^4.0.0"
+  }
 }

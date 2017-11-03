@@ -5,6 +5,7 @@ const gulp = require('gulp'),
 //styles
       sass = require('gulp-sass'),
       rename = require('gulp-rename'),
+      autoprefixer = require('gulp-autoprefixer'),
       sourcemaps = require('gulp-sourcemaps'),
 //scripts
       gulpWebpack = require('gulp-webpack'),
@@ -62,7 +63,10 @@ function styles() {
     .pipe(sass({
       includePaths: require('node-normalize-scss').includePaths
     }))
-    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }))
+    .pipe(autoprefixer())
     .pipe(sourcemaps.write())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(paths.styles.dest))

@@ -19,7 +19,7 @@ function skillsAnimation() {
   const skillsBehavior = e => {
     // проверка входит ли элемент в зону для анимирования
     svgList.forEach(function(item, i, svgList) {
-      realItemHeight = item.getBoundingClientRect().y;
+      realItemHeight = item.getBoundingClientRect().top;
       if(realItemHeight > topBorderDetector && realItemHeight < bottomBorderDetector) {
         item.classList.add('animate'); 
       } else {
